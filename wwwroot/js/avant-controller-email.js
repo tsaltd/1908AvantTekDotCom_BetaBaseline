@@ -29,7 +29,7 @@ function emailController($scope, $http) {
         vm.SendGridAlphaInterested = function (me) {
 
             if ($scope.myForm.$invalid)
-                return ;
+                return;
 
           // var me = "zozo@ff.noq";
           $http.get("http://www.cuisinecuration.com/api/sendgrid/send/?", { params: { "who": me } })
