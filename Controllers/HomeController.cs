@@ -37,7 +37,11 @@ namespace Workspace.Controllers
             </div>
         </form>";
 
-            model.HtmlSection = System.Web.HttpUtility.HtmlDecode(s);
+            //model.HtmlSection = System.Web.HttpUtility.HtmlDecode(s);
+            model.HtmlSection = System.Net.WebUtility.HtmlDecode(s);
+
+
+            
          //   model.HtmlSection = "hello world";
 
             return View(model);
@@ -69,7 +73,7 @@ namespace Workspace.Controllers
             </div>
         </form>";
 
-            model.HtmlSection = System.Web.HttpUtility.HtmlDecode(s);
+            model.HtmlSection = System.Net.WebUtility.HtmlDecode(s);
             //   model.HtmlSection = "hello world";
 
             return View(model);
