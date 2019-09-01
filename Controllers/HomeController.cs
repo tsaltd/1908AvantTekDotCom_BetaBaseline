@@ -54,9 +54,10 @@ namespace Workspace.Controllers
         {
             vmHomeIndex model = new vmHomeIndex();
 
-            string s = @"<form style=""padding-top: 50px"" novalidate name=""myForm"" class=""form-inline"" role=""form"" ng-submit=""vm.SendGridAlphaInterested(vm.email.text)"">\r\n
-            <div class=""form-group"" ng-class=""{'has-error' : myForm.input.$invalid && myForm.input.$dirty}"">\r\n
-                @*<label for=""input"" class=""col-sm-3 control-label"">Email</label>*@\r\n
+            string s = @"<form style=""padding-top: 50px"" novalidate name=""myForm"" class=""form-inline"" role=""form"" ng-submit=""vm.SendGridAlphaInterested(vm.email.text)"">
+            @*<form style=""padding-top: 50px"" novalidate name=""myForm"" class=""form-inline"" ng-submit=""vm.SendGridAlphaInterested(vm.email.text)"">*@
+            <div class=""form-group"" ng-class=""{'has-error' : myForm.input.$invalid && myForm.input.$dirty}"">
+                @*<label for=""input"" class=""col-sm-3 control-label"">Email</label>*@
                 <div class=""row"">
                     <span class=""col-md-4 md-offset-3"">
                         <input type=""email"" name=""input"" class=""input-lg form-control"" ng-model=""vm.email.text"" ng-required=""true"">
@@ -73,12 +74,12 @@ namespace Workspace.Controllers
             </div>
         </form>";
 
-            model.HtmlSection = System.Net.WebUtility.HtmlDecode(s);
-            //   model.HtmlSection = "hello world";
 
+
+            model.HtmlSection = HtmlEncoder.Default.Encode(s);
             return View(model);
         }
-     
+
         public IActionResult AvantTekAlpha()
         {
             return View();
