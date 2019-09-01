@@ -35,8 +35,10 @@ namespace Workspace
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            loggerFactory.AddConsole(Configuration.GetSection("Logging"));
+          
+#pragma warning disable CS0618 // Type or member is obsolete
             loggerFactory.AddDebug();
+#pragma warning restore CS0618 // Type or member is obsolete
 
             if (env.IsDevelopment())
             {
@@ -61,6 +63,10 @@ namespace Workspace
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
-        
+
+        private void AddConsole(Startup startup, ILoggingBuilder loggingBuilder, object builder)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
