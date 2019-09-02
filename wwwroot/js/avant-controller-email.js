@@ -11,7 +11,7 @@ function emailController($scope, $http) {
     };
 
     vm.SendGridAlphaInterested = function(who) {
-            $http.get("http://www.cuisinecuration.com/api/sendgrid/send", { params: { "who": who } })
+            $http.get("https://www.cuisinecuration.com/api/sendgrid/send", { params: { "who": who } })
                 .then(onSendComplete);
         }
 
