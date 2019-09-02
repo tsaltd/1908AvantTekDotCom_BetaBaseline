@@ -32,7 +32,7 @@ function emailController($scope, $http) {
                 return;
 
           // var me = "zozo@ff.noq";
-          $http.get("http://www.cuisinecuration.com/api/sendgrid/send/?", { params: { "who": me } })
+          $http.get("https://www.cuisinecuration.com/api/sendgrid/send/?", { params: { "who": me } })
           // $http.get("http://www.cuisinecuration.com/api/sendgrid/send?who=xx@yy.ets")
                 .then(onSendComplete);
 
