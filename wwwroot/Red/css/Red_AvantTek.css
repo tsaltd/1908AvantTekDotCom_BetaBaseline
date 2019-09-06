@@ -5,16 +5,15 @@
 @media (max-width: 768px) {
 
     #intro > div {
-        padding-top: 200px;
+        /*padding-top: 200px;*/
+        padding-top: 100px;
+        padding-bottom: 200px
     }
 }
 
 #features > div > h2 {
     padding-bottom: 20px;
 }
-
-
-
 
 .fill-screen {
     background-size: cover;

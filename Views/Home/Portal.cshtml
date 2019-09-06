@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "_LayoutRed";}
+
+@model Workspace.ViewModels.vmHomeIndex
+<!--/////////// HEADER SECTION //////////-->
+    <section id="intro">
+        <div class="container">
+            <div class="intro-well wow animated bounceIn">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Hello AvantTek !!</h1>
+                        <h2>Your collaboration space for technology news and views is on the way</h2>
+                        @Html.ActionLink("To The Portal", "AvantTekAlpha", "Home", null, new { @class = "btn btn-info", id = "HomeLink" });
+                    </div>
+                </div>
+            </div>
+    </div><!-- /container -->
+</section>
+<!-- LAUNCH VERSION COMMENT START -->
+<!--////////// FEATURES SECTION ////////// -->
+<!--////////// NEWSLETTER SECTION ////////// -->
+<!--////////// DOWNLOAD SECTION ////////// -->
+<!--////////// FOOTER SECTION ////////// -->
+<footer>
+    <p>
+        Copyright © 2015 Flati. Made with <i class="fa fa-heart footer-heart"></i> by Themeberry
+    </p>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script>
+    $(function () {
+        $(window).on("load resize", function () {
+            $(".fill-screen").css("height", window.innerHeight);
+        });
+    });
+</script>
