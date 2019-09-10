@@ -9,6 +9,7 @@
     <ApplicationIcon />
     <StartupObject />
     <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <UserSecretsId>4ca81b6d-7b40-496a-a8e6-b5ce9f37a867</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
