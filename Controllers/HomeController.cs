@@ -41,12 +41,44 @@ namespace Workspace.Controllers
             model.HtmlSection = System.Net.WebUtility.HtmlDecode(s);
 
 
-            
-         //   model.HtmlSection = "hello world";
+
+            //   model.HtmlSection = "hello world";
 
             return View(model);
         }
-        public IActionResult tester()
+        public IActionResult devTest()
+        {
+            vmHomeIndex model = new vmHomeIndex();
+
+        string s = @"<form style=""padding-top: 50px"" novalidate name=""myForm"" class=""form-inline"" role=""form"" ng-submit=""vm.SendGridAlphaInterested(vm.email.text)"">\r\n
+            <div class=""form-group"" ng-class=""{'has-error' : myForm.input.$invalid && myForm.input.$dirty}"">\r\n
+                @*<label for=""input"" class=""col-sm-3 control-label"">Email</label>*@\r\n
+                <div class=""row"">
+                    <span class=""col-md-4 md-offset-3"">
+                        <input type=""email"" name=""input"" class=""input-lg form-control"" ng-model=""vm.email.text"" ng-required=""true"">
+                    </span>
+                    <span class=""col-md-2"">
+                        <button ng-click='validateEmail()' type=""submit"" class=""btn btn-primary"">Subscribe</button>
+                    </span>
+                    <span class=""col-md-3""></span>
+                </div>
+                <div class=""row"">
+                    <div id=""emErr"" class=""col-md-12"" ng-show=""myForm.input.$invalid && myForm.input.$dirty"" style=""font-size: 20px"">A valid email is required</div>
+                    @*<span ng-show=""myForm.input.$invalid && myForm.input.$dirty "">A valid email is required</span>*@
+                </div>
+            </div>
+        </form>";
+
+        //model.HtmlSection = System.Web.HttpUtility.HtmlDecode(s);
+        model.HtmlSection = System.Net.WebUtility.HtmlDecode(s);
+
+
+
+            //   model.HtmlSection = "hello world";
+
+            return View(model);
+    }
+    public IActionResult tester()
         {
             vmHomeIndex model = new vmHomeIndex();
 
