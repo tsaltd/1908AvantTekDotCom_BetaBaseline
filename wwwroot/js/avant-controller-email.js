@@ -7,8 +7,7 @@ function emailController($scope, $http) {
     var vm = this;
 
     var onSendComplete = function (response) {
-        $scope.user = res
-        ponse.data;
+        $scope.user = response.data;
     };
 
     vm.SendGridAlphaInterested = function (who) {
