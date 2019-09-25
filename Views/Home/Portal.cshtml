@@ -4,17 +4,25 @@
 
 @model Workspace.ViewModels.vmHomeIndex
 <!--/////////// HEADER SECTION //////////-->
-    <section id="intro">
-        <div class="container">
-            <div class="intro-well wow animated bounceIn">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1>Hello AvantTek !!</h1>
-                        <h2>Your collaboration space for technology news and views is on the way</h2>
-                        @Html.ActionLink("To The Portal", "AvantTekAlpha", "Home", null, new { @class = "btn btn-info", id = "HomeLink" });
-                    </div>
+    <section id="intro" style="padding-bottom: 0px;">
+    <div class="container" style="padding-bottom: 0px;padding-top: 0px;height: 350px;">
+        <div class="intro-well wow animated bounceIn" style="height: 350px;padding-top: 50px;">
+            <div class="row">
+                <div class="col">
+                    <h1 style="margin-bottom:35px;">Hello AvantTek !!</h1>
+                    <!-- <a class="btn btn-info" href="/Home/AvantTekAlpha" id="HomeLink">To The Portal</a>; -->
+                </div>
+            </div>  
+            <div class="row" style="padding-bottom: 0px;">
+                <div class="col">
+                    <h2 style="margin-bottom: 10px;">Technology Trends</h2>
+                </div>
+            </div><div class="row" style="padding-bottom: 0px;">
+                <div class="col">
+                    <h2 style="margin-bottom: 10px;">Overviews -- Drill Downs</h2>
                 </div>
             </div>
+        </div>
     </div><!-- /container -->
 </section>
 <!-- LAUNCH VERSION COMMENT START -->

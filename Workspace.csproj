@@ -18,7 +18,6 @@
   </ItemGroup>
   <ItemGroup> <Reference Include="netstandard" /> </ItemGroup>
   <ItemGroup>
-    <Content Remove="Views\Home\tester - Copy.cshtml" />
     <Content Remove="wwwroot\lib\angular\README.md" />
   </ItemGroup>
 
