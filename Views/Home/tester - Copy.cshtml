@@ -4,24 +4,24 @@
 
 @model Workspace.ViewModels.vmHomeIndex
 <!--/////////// HEADER SECTION //////////-->
-<section id="intro" style="padding-bottom: 20px; height: 505px">
-    <div class="container" style="padding-bottom: 0px; padding-top: 35px">
-        <div class="intro-well wow animated bounceIn" style="height: 205px">
-            <div class="row">
+<section id="intro" style="padding-bottom: 0px;">
+    @*<div class="container" style="padding-bottom: 0px;padding-top: 0px;height: 275px;">*@
+    <div class="container">
+        <div class="intro-well wow animated bounceIn" style="height: 235px;padding-top: 50px;">
+            <div class="row" style="height: 50px;">
                 <div class="col">
-                    <h1 style="margin-bottom:35px;">Hello AvantTek !!</h1>
-                    <!-- @Html.ActionLink("To The Portal", "AvantTekAlpha", "Home", null, new { @class = "btn btn-info", id = "HomeLink" }); -->
+                    <h1 style="padding-bottom:35px;">Hello AvantTek !!</h1>
+                    <!-- <a class="btn btn-info" href="/Home/AvantTekAlpha" id="HomeLink">To The Portal</a>; -->
                 </div>
             </div>
-            <div class="row">
+            @*<div class="row" style="padding-bottom: 0px;">
+                    <div class="col">
+                        <h2 style="margin-bottom: 10px;">Technology Trends</h2>
+                    </div>
+                </div>*@
+            <div class="row" style="padding-bottom: 0px;">
                 <div class="col">
-                    <h2 style="margin-bottom: 10px;">Technology Trends</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <h2 style="margin-bottom: 10px;"> Overviews and Drill Downs</h2>
-                    -->
+                    <h2 style="margin-bottom: 10px;">Overviews -- Drill Downs</h2>
                 </div>
             </div>
         </div>
@@ -31,21 +31,17 @@
 <!--////////// FEATURES SECTION ////////// -->
 <section id="features">
     <div style="visibility: visible; animation-name: fadeIn;" class="container wow fadeIn  animated">
-         <div class = "container">
-            <div class= "row">
-                 <div class="col">
-                     <h1 style="padding-bottom: 20px;"> New Frontiers of Technology</h1>
-                </div> 
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="h2a">Frontiers of Technology Moving Fast !!!</div>
+                    <h2 style="padding-bottom: 35px;">Frontiers of Technology Moving Fast !!!</h2>
+                </div>
             </div>
-            <div class= "row">
-                 <div class="col">
-                     <h1 style="padding-bottom: 35px;">Are So Yesterday</h1>
-                </div> 
-            </div>
-            <div class= "row">
-                 <div class="col">
-                     <h1 style="padding-bottom: 35px;">AvantTek  --  All About Advanced Technology</h1>
-                </div> 
+            <div class="row">
+                <div class="col">
+                    <h1 style="padding-bottom: 35px;">AvantTek  --  All About Advanced Technology</h1>
+                </div>
             </div>
         </div>
     </div>
@@ -74,13 +70,12 @@
                 <p class="icntitle">Distributed Apps</p>
                 <p class="icnp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget elit eu velit vehicula feugiat. </p>
             </div>
-        </div><!-- /col-md-4 -->
-    </div><!-- /row -->
-    <!-- /container -->
-    <!-- /more-features -->
-    </section>
-    <!--////////// NEWSLETTER SECTION ////////// -->
-    <section id="newsletter" ng-app="app-email">
+        </div><!-- /row -->
+        <!-- /container -->
+        <!-- /more-features -->
+</section>
+<!--////////// NEWSLETTER SECTION ////////// -->
+<section id="newsletter" ng-app="app-email">
     <div class="container wow animated fadeInDown" ng-controller="emailController as vm">
         <div class="row">
             <div class="col-md-12"></div>
@@ -104,17 +99,17 @@
     </div>
 </section>
 
-    <!--////////// FOOTER SECTION ////////// -->
-    <footer>
-        <p>
-            Copyright © 2015 Flati. Made with <i class="fa fa-heart footer-heart"></i> by Themeberry
-        </p>
-    </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script>
-        $(function () {
-            $(window).on("load resize", function () {
-                $(".fill-screen").css("height", window.innerHeight);
-            });
+<!--////////// FOOTER SECTION ////////// -->
+<footer>
+    <p>
+        Copyright © 2015 Flati. Made with <i class="fa fa-heart footer-heart"></i> by Themeberry
+    </p>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script>
+    $(function () {
+        $(window).on("load resize", function () {
+            $(".fill-screen").css("height", window.innerHeight);
         });
-    </script>
+    });
+</script>
