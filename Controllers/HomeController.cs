@@ -111,7 +111,7 @@ namespace Workspace.Controllers
             return View(model);
         }
        // public IActionResult Portal()
-        public IActionResult img()
+        public IActionResult tc()
         {
             vmHomeIndex model = new vmHomeIndex();
 
