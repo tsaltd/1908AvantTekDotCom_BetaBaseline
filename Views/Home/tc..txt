@@ -5,29 +5,21 @@
 @model Workspace.ViewModels.vmHomeIndex
 <!--/////////// HEADER SECTION //////////-->
 <section id="intro">
-<div class="container" style="
-    padding-bottom: 25px;
-    padding-top: 55px;">
+        <div class="container">
             <div class="intro-well wow animated bounceIn">
                 <div class="row">
                     <div class="col-md-12">
                         <h1>Hello AvantTek !!</h1>
-                    </div>
-                </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 style="margin-top: 20px;margin-bottom: 7px;">Adventures in Digital Transformation</h2>  
-                    </div>
-                </div>
+                        <h2>Adventures in Digital Transformation</h2>                    </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 style="
-                             margin-bottom: 25px;
-                             margin-top: 0px;">Frameworks  &amp;  Tools --  Overviews  &  Drill Downs</h2> 
+                        <h2>Overviews &amp; Drill-Downs of the Frameworks and Tools</h2>
                 </div>
              </div>
          </div>
-    </div>
+    </div><!-- /container -->
 </section>
 <!--////////// FEATURES SECTION ////////// -->
 <section id="features">
