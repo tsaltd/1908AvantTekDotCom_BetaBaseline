@@ -46,7 +46,7 @@ namespace Workspace.Controllers
 
             return View(model);
         }
-        public IActionResult portal()
+        public IActionResult solution()
         {
             vmHomeIndex model = new vmHomeIndex();
 
