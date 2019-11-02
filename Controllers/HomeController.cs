@@ -16,6 +16,7 @@ namespace Workspace.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
+            // vmHomeIndex model = new vmHomeIndex();
             vmHomeIndex model = new vmHomeIndex();
 
             string s = @"<form style=""padding-top: 50px"" novalidate name=""myForm"" class=""form-inline"" role=""form"" ng-submit=""vm.SendGridAlphaInterested(vm.email.text)"">\r\n
@@ -78,7 +79,7 @@ namespace Workspace.Controllers
 
             return View(model);
     }
-    public IActionResult tester()
+    public IActionResult badsolution()
         {
             vmHomeIndex model = new vmHomeIndex();
 
