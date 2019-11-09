@@ -79,7 +79,7 @@ namespace Workspace.Controllers
 
             return View(model);
     }
-    public IActionResult badsolution()
+    public IActionResult tester()
         {
             vmHomeIndex model = new vmHomeIndex();
 
