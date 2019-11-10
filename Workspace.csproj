@@ -73,6 +73,7 @@
 
   <ItemGroup>
     <Folder Include="Controllers\API\" />
+    <Folder Include="wwwroot\css\FlexBox\" />
   </ItemGroup>
 
   <ItemGroup>
