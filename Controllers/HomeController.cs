@@ -144,9 +144,9 @@ namespace Workspace.Controllers
 
             return View(model);
         }
-        public IActionResult LearnToClick()
+        public IActionResult devTest()
         {
-            return View();
+            return View();     
         }
         public IActionResult AvantTekAlpha()
         {
