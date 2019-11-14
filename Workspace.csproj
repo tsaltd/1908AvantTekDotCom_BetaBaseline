@@ -73,7 +73,7 @@
 
   <ItemGroup>
     <Folder Include="Controllers\API\" />
-    <Folder Include="wwwroot\css\FlexBox\" />
+    <Folder Include="wwwroot\css\FlexBox\twitter-bootstrap\" />
   </ItemGroup>
 
   <ItemGroup>
