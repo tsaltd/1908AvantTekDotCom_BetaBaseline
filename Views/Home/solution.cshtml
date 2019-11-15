@@ -34,37 +34,21 @@
             </div>
          </div>
     </div>
-    <div class="container">
-        <!-- check git -->
-        <div class="row" style="margin-bottom: 30px">
-            <div class="col">
-            
-            </div><!-- /col-md-4 -->
-            @*<div class="col-md-6 wow fadeInLeft animated" data-wow-delay="0.1s">*@            
-            <div class="col">
-                     @* <img src="~/red/img/iphone2.jpg" class="img-responsive" alt="picture">*@
-                     <!-- <img src="~/Red/img/XLbetaStep1.jpg" class="img-responsive" alt="picture"/> -->
-                    <img src="~/Red/img/alphaEth.png" class="img-responsive" alt="picture"/>
-            </div>
-            <div class="col">
-            
-            </div>       
-        </div><!-- /row -->
-        <div class="row" style="margin-bottom: 30px">
-            <div class="col">
-            </div>
-            <div class="col">
-                     <!-- <img src="~/Red/img/XLbetaStep1.jpg" class="img-responsive" alt="picture"/> -->
-                 <img src="~/Red/img/alpha02Azure.png" class="img-responsive" alt="picture"/>
-            </div>
-            <div class="col">
-            </div><!-- /col-md-4 -->
-            @*<div class="col-md-6 wow fadeInLeft animated" data-wow-delay="0.1s">*@            
-            <div class="col">
-            </div>       
-        </div><!-- /row -->
+    <div class="d-flex">
+        <div style="margin-bottom: 30px">        
+                <img src="~/Red/img/GreenCloud$02.png" alt="Tools"/>      
         </div>
-    </div><!-- /container ->
+     </div>
+     <div class="d-flex">
+        <div style="margin-bottom: 30px">        
+                <img src="~/Red/img/redEthBeta$01.png" alt="Ethereum" />      
+        </div>
+     </div>
+     <div class="d-flex">
+        <div style="margin-bottom: 30px">        
+                <img src="~/Red/img/AzureBeta$01.png" alt="Azure" />/>      
+        </div>
+     </div>   
 </section>
 <!--////////// NEWSLETTER SECTION ////////// -->XLbetaStep1
 <section id="newsletter" ng-app="app-email">
@@ -76,7 +60,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div ID="emailtest" style="padding-top: 75px" class="ng-app">
-                        <form novalidate name="myForm" class="form-inline" ng-submit="vm.SendGridAlphaInterested(vm.email.text)">
+            <form novalidate name="myForm" class="form-inline" ng-submit="vm.SendGridAlphaInterested(vm.email.text)">
                             <input type="email" name="input" class="input-lg" ng-model="vm.email.text" required>
                             <button ng-click='validateEmail()' type="submit" class="btn btn-primary">Send Me Updates</button>
                         </form>
