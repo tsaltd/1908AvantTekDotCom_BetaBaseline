@@ -39,4 +39,12 @@ textarea {
     .carousel-caption {
         z-index: 10 !important;
     }
-}
+} 
+/*flex tc1*/
+    .callouts{
+        border: 1px, solid, red
+    }
+    .callouts img{
+        height: auto;
+        width: 100px;
+    }
