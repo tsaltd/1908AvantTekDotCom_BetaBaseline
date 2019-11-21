@@ -1,34 +1,35 @@
-﻿@{
+@{
     ViewData["Title"] = "Index";
     Layout = "_LayoutRed";}
 
 @model Workspace.ViewModels.vmHomeIndex
 <!--/////////// HEADER SECTION //////////-->
-<section id="intro" class="intro-well wow d-flex flex-column animated bounceIn w-100" style="padding-top: 50px; padding-bottom: 10px;">
+<section id="intro" class="intro-well wow animated bounceIn">
     <div class="d-flex flex-column">
-            <h1>Hello AvantTek !!</h1>
+        <div class="d-flex flex-column">
+            <h1 class="tester">Hello AvantTek !!</h1>
             <h2 style="margin-top: 20px;margin-bottom: 7px;">Adventures in Digital Transformation</h2>  
             <h2 style="margin-bottom: 25px; margin-top: 0px;">Frameworks  &amp;  Tools --  Overviews  &  Drill-Downs</h2> 
-    </div>
+        </div>
+     </div> 
 </section>
 <!-- LAUNCH VERSION COMMENT START -->
 <!--////////// FEATURES SECTION ////////// -->
 
-<section id="features" class="d-flex flex-column">
-    <div style="visibility: visible; animation-name: fadeIn;" class="container wow fadeIn  animated">
+<section id="features">
+    <div style="visibility: visible; animation-name: fadeIn;" class="d-flex wow fadeIn  animated">
         <h1>Exploring the Frontiers of Modern Web Technologies</h1>
     </div>
     <!-- /container -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 wow fadeInLeft animated" data-wow-delay="0.1s">
+    <div class="d-flex">
+            <div class="d-flex flex-column fadeInLeft animated" data-wow-delay="0.1s">
                 <div class="iconbox">
                     <a href="#" class="icn-1">Platforms</a>
                 </div>
                 <p class="icntitle">Platforms</p>
                 <p class="icnp">Growth of cloud adoption continues to accelerate rapidly. The constant innovation in ways to deliver on-demand access to scalable computing is a foundation of the digital eco-sphere</p>
             </div><!-- /col-md-4 -->
-             <div class="col-md-4 wow fadeInLeft animated" data-wow-delay="0.1s">
+             <div class="wow flex-column fadeInLeft animated" data-wow-delay="0.1s">
                 <div class="iconbox">
                     <a href="#" class="icn-1">Modern Web Solutions</a>
                 </div>
@@ -36,15 +37,15 @@
                 <p class="icnp">Platforms, languages, operating systems, and developer tools have evolved and matured in exciting ways.  Today's modern web is all about richly functional front-ends connected to powerful servers. They are cloud-hosted and scalable, cross-platform, and modular.</p>
             </div><!-- /col-md-4 -->
             <!-- /col-md-4 -->
-            <div class="col-md-4 wow fadeInLeft animated" data-wow-delay="0.3s">
-                <div class="iconbox">
+            <div class="d-flex flex-column wow fadeInLeft animated" data-wow-delay="0.3s">
+                <div class="iconbox flex-column">
                     <a href="#" class="icn-3">Distributed Apps</a>
                 </div>
                 <p class="icntitle">Distributed Apps</p>
                 <p class="icnp">D-Apps are "smart contract" code modules integrated into blockchain platforms.   They create solutions beyond conventional crypto-currency exchanges.  In turn,  D-apps benefit from the blockchain fault tolerant network, cryptography-based security features, and the immutable distributed transaction ledger.</p>
             </div>
         </div><!-- /row-->
-    </div><!-- /container -->
+   <!-- /container -->
 </section>
     <!--////////// NEWSLETTER SECTION ////////// -->
 <!--////////// NEWSLETTER SECTION ////////// -->
