@@ -79,7 +79,7 @@ namespace Workspace.Controllers
 
             return View(model);
     }
-    public IActionResult tester()
+        public IActionResult tester()
         {
             vmHomeIndex model = new vmHomeIndex();
 
@@ -145,6 +145,10 @@ namespace Workspace.Controllers
             return View(model);
         }
         public IActionResult devTest()
+        {
+            return View();     
+        }
+          public IActionResult alpha()
         {
             return View();     
         }
