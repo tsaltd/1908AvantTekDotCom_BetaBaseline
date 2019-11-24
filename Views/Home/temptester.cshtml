@@ -3,37 +3,65 @@
     Layout = "_LayoutRed";}
 
 @model Workspace.ViewModels.vmHomeIndex
-
-<!--/////////// HEADER SECTION //
-
-////////-->
+<!--/////////// HEADER SECTION //////////-->
 <section id="intro" class="intro-well wow d-flex flex-column animated bounceIn w-100" style="padding-top: 50px; padding-bottom: 10px;">
     <div class="d-flex flex-column">
         <h1>Hello AvantTek !!</h1>
         <h2 style="margin-top: 20px;margin-bottom: 7px;">Adventures in Digital Transformation</h2>
-        <h2 style="margin-bottom: 25px; margin-top: 0px;">Platforms, Frameworks  &amp;  Tools --  Overviews  &  Drill-Downs</h2>
+        <h2 style="margin-bottom: 25px; margin-top: 0px;">Frameworks  &amp;  Tools --  Overviews  &  Drill-Downs</h2>
     </div>
 </section>
 <!-- LAUNCH VERSION COMMENT START -->
 <!--////////// FEATURES SECTION ////////// -->
 
+<section id="features" class="d-flex>" style="padding-bottom: 50px">
+    <div style="visibility: visible; animation-name: fadeIn;" class="d-flex flex-column wow fadeIn  animated">
+        <h1>Exploring the Frontiers of Modern Web Technologies</h1> 
+    </div>
+    <div class="d-flex">
+        <div class="d-flex flex-column justify-column-center wow fadeInLeft animated" data-wow-delay="0.1s">
+            <div class="iconbox">
+                <a href="#" class="icn-1">Platforms</a>
+            </div>
+            <p class="icntitle">Platforms</p>
+            <p class="icnp">Growth of cloud adoption continues to accelerate rapidly. The constant innovation in ways to deliver on-demand access to scalable computing is a foundation of the digital eco-sphere</p>
+        </div><!-- /col-md-4 -->
+        <div class="d-flex flex-column justify-column-center wow fadeInLeft animated" data-wow-delay="0.1s">
+            <div class="iconbox">
+                <a href="#" class="icn-1">Platforms</a>
+            </div>
+            <p class="icntitle">Platforms</p>
+            <p class="icnp">Growth of cloud adoption continues to accelerate rapidly. The constant innovation in ways to deliver on-demand access to scalable computing is a foundation of the digital eco-sphere</p>
+        </div><!-- /col-md-4 -->
+        <div class="d-flex flex-column justify-column-center wow fadeInLeft animated" data-wow-delay="0.1s">
+            <div class="iconbox">
+                <a href="#" class="icn-1">Platforms</a>
+            </div>
+            <p class="icntitle">Platforms</p>
+            <p class="icnp">Growth of cloud adoption continues to accelerate rapidly. The constant innovation in ways to deliver on-demand access to scalable computing is a foundation of the digital eco-sphere</p>
+        </div><!-- /col-md-4 -->
+            <!-- /container -->
+    </div>
+</section>
+
+
 <!-- ================================================================
 **************************************************************** -->
 <section id="features" class="d-flex flex-column" style="padding-bottom: 50px">
     <div style="visibility: visible; animation-name: fadeIn;" class="container wow fadeIn  animated">
-        <h1>On the Frontiers of Modern Web Technologies</h1>
+        <h1>Exploring the Frontiers of Modern Web Technologies</h1>
     </div>
     <!-- /container -->
     <div class="container">
         <div class="row">
-            <div class="col-md-4 col-sm-12 wow fadeInLeft animated" data-wow-delay="0.1s">
+            <div class="col-md-4 wow fadeInLeft animated" data-wow-delay="0.1s">
                 <div class="iconbox">
                     <a href="#" class="icn-1">Platforms</a>
                 </div>
                 <p class="icntitle">Platforms</p>
                 <p class="icnp">Growth of cloud adoption continues to accelerate rapidly. The constant innovation in ways to deliver on-demand access to scalable computing is a foundation of the digital eco-sphere</p>
             </div><!-- /col-md-4 -->
-            <div class="col-md-4 col-sm-12 wow fadeInLeft animated" data-wow-delay="0.1s">
+            <div class="col-md-4 wow fadeInLeft animated" data-wow-delay="0.1s">
                 <div class="iconbox">
                     <a href="#" class="icn-2">Modern Web Solutions</a>
                 </div>
@@ -41,7 +69,7 @@
                 <p class="icnp">Platforms, languages, operating systems, and developer tools have evolved and matured in exciting ways.  Today's modern web is all about richly functional front-ends connected to powerful servers. They are cloud-hosted and scalable, cross-platform, and modular.</p>
             </div><!-- /col-md-4 -->
             <!-- /col-md-4 -->
-            <div class="col-md-4 wow col-sm-12 fadeInLeft animated" data-wow-delay="0.3s">
+            <div class="col-md-4 wow fadeInLeft animated" data-wow-delay="0.3s">
                 <div class="iconbox">
                     <a href="#" class="icn-3">Distributed Apps</a>
                 </div>
@@ -52,26 +80,22 @@
     </div><!-- /container -->
 </section>
 <!--////////// NEWSLETTER SECTION ////////// -->
-<section id="newsletter" ng-app="app-email">s
+<section id="newsletter" ng-app="app-email">
     <div class="d-flex flex-column justify-content-center">
         <h3>Inviting You To The Launch of AvantTek.com</h3>
     </div>
-    <div ng-controller="emailController as vm" class="d-flex justify-content-center">
-        <div ID="emailtest" style="padding-top: 75px" class="ng-app">
+    <div ng-controller="emailController as vm" class="d-flex flex-row justify-content-center">
+        <div ID="emailtest" style="padding-top: 75px" class="ng-app flex-row d-flex">
+             <div class=d-flex>
                 <form novalidate name="myForm" class="form-inline" ng-submit="vm.SendGridAlphaInterested(vm.email.text)">
-                    <div class="d-flex flex-row justify-content-center">
-                        <input type="email" name="input" class="input-sm" ng-model="vm.email.text" required/>
-                        <button ng-click='validateEmail()' type="submit" class="btn btn-secondary">Send Me Updates</button>
-                    </div>
+                    <input type="email" name="input" class="input-lg" ng-model="vm.email.text" required/>
+                    <button ng-click='validateEmail()' type="submit" class="btn btn-secondary">Send Me Updates</button>
+                    <div id="emErr" class="d-flex flex-row justify-content-center" ng-show="myForm.input.$invalid && myForm.input.$dirty" 
+                                style="font-size: 20px">A valid email is required</div>
+                    <div class="d-flex flex-column justify-content-center"></div>
                 </form>
-                <!-- <div class="d-flex flex-column justify-content-center"> -->
-                            <p id="emErr" ng-show="myForm.input.$invalid && myForm.input.$dirty" 
-                                 class="d-flex flex-column justify-content-center"
-                                 style="font-size: 20px">
-                                 A valid email is required</p>
-                <!-- </div> -->
-                
          </div>
+    </div>
 </section>
 <!--////////// NEWSLETTER SECTION ////////// -->
 <!--////////// DOWNLOAD SECTION ////////// -->

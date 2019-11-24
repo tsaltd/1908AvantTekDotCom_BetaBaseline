@@ -160,5 +160,9 @@ namespace Workspace.Controllers
         {
             return View();
         }
+        public IActionResult temptester()
+        {
+            return View();
+        }
     }
 }
