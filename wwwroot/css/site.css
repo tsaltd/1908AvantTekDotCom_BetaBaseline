@@ -2,6 +2,14 @@
     padding-top: 50px;
     padding-bottom: 20px;
 }
+.responsiveFlex {
+object-fit: fill;
+object-fit: contain;
+object-fit: cover;
+object-fit: scale-down;
+object-fit: none;
+}
+
 
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
