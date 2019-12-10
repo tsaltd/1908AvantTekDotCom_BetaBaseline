@@ -2,7 +2,17 @@
     ViewData["Title"] = "Index";
     Layout = "_LayoutRed";}
 
-@model Workspace.ViewModels.vmHomeIndex
+@model Workspace.ViewModels.vmHomeIndex;
+
+<style>
+img{
+    max-width: 100%;
+    height:auto;
+}
+
+</style>
+
+
 <!--/////////// HEADER SECTION //////////-->
 
 <section id="intro" style="border-style: solid;
@@ -34,7 +44,7 @@
                      <h1 style="padding-bottom: 35px; color: black; font-size: 27px;">Exploring the Frontiers of Technology</h1>
                 </div>
     </div>
-    <div class="container">
+    <!-- <div class="container">
         <div class="row">
             <div class="col">
                <img src="~/Red/img/mobileWordCloud.PNG" alt="Tools" class="responsiveFlex">
@@ -76,50 +86,34 @@
                     <img src="~/Red/img/mobileAzure.PNG" alt="Tools" class=img-fluid/>
             </div>
         </div>
-    </div>
+    </div> -->
     <div>
 
     </div>
-    <DIV CLASS="D-FLEX">
-        <div class="d-flex justify-content-center">
-                <img src="~/Red/img/mobileWordCloud.PNG" alt="Tools" class=img-fluid/>      
+    <DIV CLASS="flex-column d-flex">
+        <div class="d-flex flex- column justify-content-center">
+                <img src="~/Red/img/WordCloudAlpha02$$.PNG" alt="Tools" class="img-fluid"/>      
         </div>
-        <div class="d-flex justify-content-center img-fluid">
-            <img src="~/Red/img/mobileEther.png" alt="Ethereum" />
+        <div class="d-flex flex-column justify-content-center">
+            <img src="~/Red/img/redEthBeta$01.png" alt="Ethereum"class="img-fluid"  />
         </div>
-        <div class="d-flex justify-content-center">    
-                <img src="~/Red/img/mobileAzure.png" alt="Azure" class=img-fluid />   
+        <div class="d-flex flex-column justify-content-center">    
+                <img src="~/Red/img/HelloAzureAlpha02.png" alt="Azure" class="img-fluid" />   
         </div>   
     </DIV>
-    <DIV CLASS="D-FLEX">
-        <div class="d-flex justify-content-center">
-                <img src="~/Red/img/WordCloudAlpha02$$.PNG" alt="Tools" class=img-fluid/>      
-        </div>
-        <div class="d-flex justify-content-center img-fluid">
-            <img src="~/Red/img/redEthBeta$01.png" alt="Ethereum" />
-        </div>
-        <div class="d-flex justify-content-center">    
-                <img src="~/Red/img/HelloAzureAlpha02.png" alt="Azure" class=img-fluid />   
-        </div>   
-    </DIV>
+        <div class="d-flex flex-column justify-content-center">
+            <img src="~/Red/img/WordCloudAlpha02$$.PNG" alt="Tools" class="img-fluid d-block"/> 
+        </div> 
 
-    <DIV CLASS="d-flexflex-column justify-content-center">
-        
-        <div>
-            <img src="~/Red/img/WordCloudAlpha02$$.PNG" alt="Tools" class="d-flex justify-content-center"/>
-                        <img src="~/Red/img/redEthBeta$01.png" alt="Tools"/>
+         <div class="d-flex flex-column justify-content-center"> 
+            <img src="~/Red/img/redEthBeta$01.png" alt="Ethereum" class="img-fluid d-block"  /> 
         </div>
-        <div>
-            <img src="~/Red/img/HelloAzureAlpha02.png" alt="Tools" class="justify-content-center"/>
-        </div >
-<!--         
 
-                <img src="~/Red/img/WordCloudAlpha02$$.PNG" class="d-flex flex-column justify-content-center" alt="Tools"/>      
-                <img src="~/Red/img/redEthBeta$01.png" class="d-flex flex-column justify-content-center"  alt="Ethereum" />  
-                <img src="~/Red/img/HelloAzureAlpha02.png" class="d-flex flex-column justify-content-center"  alt="Azure"/>   -->
-    </DIV>
-
-    </DIV></section>
+        <div class="d-flex flex-column justify-content-center"></div>
+            <img src="~/Red/img/HelloAzureAlpha02.png" alt="Azure" class="img-fluid d-block" />   
+        </div> 
+</DIV>
+</section>
 <!--////////// NEWSLETTER SECTION ////////// -->
 <section id="newsletter" ng-app="app-email" class="d-flex flex-column">
     <div class="wow animated fadeInDown d-flex flex-column justify" ng-controller="emailController as vm">
