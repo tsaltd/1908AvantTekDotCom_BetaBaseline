@@ -2,104 +2,109 @@
     ViewData["Title"] = "Index";
     Layout = "_LayoutRed";}
 
-@model Workspace.ViewModels.vmHomeIndex
+@model Workspace.ViewModels.vmHomeIndex;
+
+img{
+    max-width: 100%;
+    height:auto;
+    vertical-align: bottom;
+}
+
 <!--/////////// HEADER SECTION //////////-->
-<section id="intro" class="intro-well wow d-flex flex-column animated bounceIn w-100" style="padding-top: 50px; padding-bottom: 10px;">
-    <div class="d-flex flex-column">
-        <h1>Hello AvantTek !!</h1>
-        <h2 style="margin-top: 20px;margin-bottom: 7px;">Adventures in Digital Transformation</h2>
-        <h2 style="margin-bottom: 25px; margin-top: 0px;">Frameworks  &amp;  Tools --  Overviews  &  Drill-Downs</h2>
+
+<section id="intro" style="border-style: solid;
+                            border-color: #F1F1FF;
+                            border-top-width: 7px;
+                            border-left-width: 7px;
+                            border-bottom-width: 15px;
+                            border-right-width: 7px;">
+    <div class="d-flex" style="
+        padding-bottom: 10px;
+        padding-top: 25px;">
+            <div class="intro-well wow animated bounceIn">
+                <div class="d-flex">
+                    <div>
+                        <h1>The AvantTek Solution</h1>
+                    </div>
+                </div>
+            </div>
     </div>
 </section>
 <!-- LAUNCH VERSION COMMENT START -->
-<!--////////// FEATURES SECTION ////////// -->
-
-<section id="features" class="d-flex>" style="padding-bottom: 50px">
-    <div style="visibility: visible; animation-name: fadeIn;" class="d-flex flex-column wow fadeIn  animated">
-        <h1>Exploring the Frontiers of Modern Web Technologies</h1> 
-    </div>
-    <div class="d-flex">
-        <div class="d-flex flex-column justify-column-center wow fadeInLeft animated" data-wow-delay="0.1s">
-            <div class="iconbox">
-                <a href="#" class="icn-1">Platforms</a>
-            </div>
-            <p class="icntitle">Platforms</p>
-            <p class="icnp">Growth of cloud adoption continues to accelerate rapidly. The constant innovation in ways to deliver on-demand access to scalable computing is a foundation of the digital eco-sphere</p>
-        </div><!-- /col-md-4 -->
-        <div class="d-flex flex-column justify-column-center wow fadeInLeft animated" data-wow-delay="0.1s">
-            <div class="iconbox">
-                <a href="#" class="icn-1">Platforms</a>
-            </div>
-            <p class="icntitle">Platforms</p>
-            <p class="icnp">Growth of cloud adoption continues to accelerate rapidly. The constant innovation in ways to deliver on-demand access to scalable computing is a foundation of the digital eco-sphere</p>
-        </div><!-- /col-md-4 -->
-        <div class="d-flex flex-column justify-column-center wow fadeInLeft animated" data-wow-delay="0.1s">
-            <div class="iconbox">
-                <a href="#" class="icn-1">Platforms</a>
-            </div>
-            <p class="icntitle">Platforms</p>
-            <p class="icnp">Growth of cloud adoption continues to accelerate rapidly. The constant innovation in ways to deliver on-demand access to scalable computing is a foundation of the digital eco-sphere</p>
-        </div><!-- /col-md-4 -->
-            <!-- /container -->
-    </div>
-</section>
-
-
-<!-- ================================================================
-**************************************************************** -->
-<section id="features" class="d-flex flex-column" style="padding-bottom: 50px">
-    <div style="visibility: visible; animation-name: fadeIn;" class="container wow fadeIn  animated">
-        <h1>Exploring the Frontiers of Modern Web Technologies</h1>
-    </div>
-    <!-- /container -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 wow fadeInLeft animated" data-wow-delay="0.1s">
-                <div class="iconbox">
-                    <a href="#" class="icn-1">Platforms</a>
+<!-- ////////// FEATURES SECTION ////////// -->
+<section id="features">
+    <div style="visibility: visible; animation-name: fadeIn;" class="wow fadeIn  animated">
+                <!-- <div class="d-flex">
+                    <h1 Style="padding-bottom: 35px; color: black;font-size: 21px;font-weight: 300;">AvantTek  --  All About Advanced Technology</h1>
+                 </div> -->
+                 <div class="d-flex justify-content-center">  
+                     <h1 style="padding-bottom: 0px; color: black; font-size: 27px;">On the Frontiers of Technology</h1>
                 </div>
-                <p class="icntitle">Platforms</p>
-                <p class="icnp">Growth of cloud adoption continues to accelerate rapidly. The constant innovation in ways to deliver on-demand access to scalable computing is a foundation of the digital eco-sphere</p>
-            </div><!-- /col-md-4 -->
-            <div class="col-md-4 wow fadeInLeft animated" data-wow-delay="0.1s">
-                <div class="iconbox">
-                    <a href="#" class="icn-2">Modern Web Solutions</a>
-                </div>
-                <p class="icntitle">Modern Web Solutions</p>
-                <p class="icnp">Platforms, languages, operating systems, and developer tools have evolved and matured in exciting ways.  Today's modern web is all about richly functional front-ends connected to powerful servers. They are cloud-hosted and scalable, cross-platform, and modular.</p>
-            </div><!-- /col-md-4 -->
-            <!-- /col-md-4 -->
-            <div class="col-md-4 wow fadeInLeft animated" data-wow-delay="0.3s">
-                <div class="iconbox">
-                    <a href="#" class="icn-3">Distributed Apps</a>
-                </div>
-                <p class="icntitle">Distributed Apps</p>
-                <p class="icnp">D-Apps are "smart contract" code modules integrated into blockchain platforms.   They create solutions beyond conventional crypto-currency exchanges.  In turn,  D-apps benefit from the blockchain fault tolerant network, cryptography-based security features, and the immutable distributed transaction ledger.</p>
-            </div>
-        </div><!-- /row-->
-    </div><!-- /container -->
-</section>
+    </div>
+    <DIV CLASS="D-FLEX">
+        <div class="d-flex justify-content-center">
+                <img src="~/Red/img/mobileWordCloud.PNG" alt="Tools" class=img-fluid/>      
+        </div>
+        <div class="d-flex justify-content-center img-fluid">
+            <img src="~/Red/img/mobileEther.png" alt="Ethereum" />
+        </div>
+        <div class="d-flex justify-content-center">    
+                <img src="~/Red/img/mobileAzure.png" alt="Azure" class=img-fluid />   
+        </div>   
+    </DIV>
+    <!-- <DIV CLASS="D-FLEX">
+        <div class="d-flex justify-content-center">
+                <img src="~/Red/img/WordCloudAlpha02$$.PNG" alt="Tools" class=img-fluid/>      
+        </div>
+        <div class="d-flex justify-content-center img-fluid">
+            <img src="~/Red/img/redEthBeta$01.png" alt="Ethereum" />
+        </div>
+        <div class="d-flex justify-content-center">    
+                <img src="~/Red/img/HelloAzureAlpha02.png" alt="Azure" class=img-fluid />   
+        </div>   
+    </DIV>
+
+    <DIV CLASS="d-flexflex-column justify-content-center">
+        
+        <div>
+            <img src="~/Red/img/WordCloudAlpha02$$.PNG" alt="Tools" class="d-flex justify-content-center"/>
+                        <img src="~/Red/img/redEthBeta$01.png" alt="Tools"/>
+        </div>
+        <div>
+            <img src="~/Red/img/HelloAzureAlpha02.png" alt="Tools" class="justify-content-center"/>
+        </div >
+    </DIV>
+
+    </DIV>--
 <!--////////// NEWSLETTER SECTION ////////// -->
-<section id="newsletter" ng-app="app-email">
-    <div class="d-flex flex-column justify-content-center">
-        <h3>Inviting You To The Launch of AvantTek.com</h3>
-    </div>
-    <div ng-controller="emailController as vm" class="d-flex flex-row justify-content-center">
-        <div ID="emailtest" style="padding-top: 75px" class="ng-app flex-row d-flex">
-             <div class=d-flex>
+<section id="newsletter" ng-app="app-email" class="d-flex flex-column">
+    <div class="wow animated fadeInDown d-flex flex-column justify" ng-controller="emailController as vm">
+        <div class="d-flex flex-column justify-content-center">
+            <h3>Today's solutions ... Cloud .... Blockchain  ... modernWeb -- connedt with us and Keep Up </h3>
+        </div>
+        <div class="d-flex flex-column justify-content-center">
+             <h3>
+                 <a asp-controller="Home" asp-action="tc">Home</a>
+            </h3>
+        </div> 
+        <div class="d-flex justify-content-center">
+            <div ID="emailtest" style="padding-top: 75px" class="ng-app">
                 <form novalidate name="myForm" class="form-inline" ng-submit="vm.SendGridAlphaInterested(vm.email.text)">
-                    <input type="email" name="input" class="input-lg" ng-model="vm.email.text" required/>
-                    <button ng-click='validateEmail()' type="submit" class="btn btn-secondary">Send Me Updates</button>
-                    <div id="emErr" class="d-flex flex-row justify-content-center" ng-show="myForm.input.$invalid && myForm.input.$dirty" 
-                                style="font-size: 20px">A valid email is required</div>
-                    <div class="d-flex flex-column justify-content-center"></div>
+                            <input type="email" name="input" class="input-sm ng-pristine ng-empty ng-valid-email ng-invalid ng-invalid-required ng-touched" ng-model="vm.email.text" required="" style="
+                                height: 45px; width: 190px;">
+                            <button ng-click='validateEmail()' type="submit" class="btn btn-primary">Send Me Updates</button>
                 </form>
-         </div>
-    </div>
+     <!--  -->       </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div id="emErr" ng-show="myForm.input.$invalid && myForm.input.$dirty" style="font-size: 20px">A valid email is required</div>
+        </div>
+    </div> 
 </section>
-<!--////////// NEWSLETTER SECTION ////////// -->
-<!--////////// DOWNLOAD SECTION ////////// -->
-<footer>
+<
+<!--////////// FOOTER SECTION ////////// -->
+
+<footer class="d-flex justify-content-center">
     <p>
         Copyright © 2015 Flati. Made with <i class="fa fa-heart footer-heart"></i> by Themeberry
     </p>
@@ -112,4 +117,3 @@
         });
     });
 </script>
-
