@@ -458,12 +458,12 @@ footer p {
     margin: 3px;
 }
 /* ========== MEDIA QUIRIES ========== */
-@media screen and (max-width:500px) {
+@media screen and (max-width:420px) {
 header {
 	padding-top: 20px;
 }
 #intro {
-	padding-bottom: 50px;
+	padding-bottom: 35px !important ;
 }
 #intro h1 {
 	font-size: 37px;
