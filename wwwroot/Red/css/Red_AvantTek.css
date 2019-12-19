@@ -10,6 +10,19 @@
         padding-bottom: 125px
     }
 }
+.callOuts {
+	border: 1px solid #d7d8da;
+}
+
+	.callOuts img {
+		height: auto;
+		width: 375px;
+	}
+
+
+
+
+
 
 @media (max-width: 425px) {
 
