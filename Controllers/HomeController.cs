@@ -38,6 +38,17 @@ namespace Workspace.Controllers
 
             return View(model);
     }
+    public IActionResult solutionv1()
+    
+        {
+            vmHomeIndex model = new vmHomeIndex();
+
+        
+        //model.HtmlSection = System.Web.HttpUtility.HtmlDecode(s);
+        //model.HtmlSection = System.Net.WebUtility.HtmlDecode(s);
+
+            return View(model);
+    }
         public IActionResult tester()
         {
             vmHomeIndex model = new vmHomeIndex();
