@@ -10,45 +10,26 @@
         vertical-align: bottom;
     }
 </style>
-
-
-
 <!--/////////// HEADER SECTION //////////-->
-
-<section id="intro" style="border-style: solid;
-                            border-color: #F1F1FF;
-                            border-top-width: 7px;
-                            border-left-width: 7px;
-                            border-bottom-width: 15px;
-                            border-right-width: 7px;">
-    <div class="d-flex" style="
-        padding-bottom: 10px;
-        padding-top: 25px;">
-        @* <div class="intro-well wow animated bounceIn"> *@
-        <div class="intro-well">
-            <div class="d-flex">
-                <div>
-                    <h1 class="ml-5">The AvantTek Solution</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+@* <section id="intro" class="intro-well wow d-flex flex-row justify-content-center" style="padding-top: 60px;padding-bottom: 65px;"> *@
+<section id="intro" class="intro-well d-flex flex-row justify-content-center" style="padding-top: 25px;padding-bottom: 5px;">
+    <div class="d-flex flex-column justify-content-center" style="padding-top: 0px; padding-bottom: 0px">
+        <h1 style="padding-bottom: 30px">The AvantTek Solution</h1> 
 <!-- ////////// FEATURES SECTION ////////// -->
 <section id="features" style="padding-top: 22px">
     <div>
-        <picture class="d-flex flex-row justify-content-center">
+        <picture class="d-flex flex-row justify-content-center" style="margin-bottom: 15px; margin-top: 20px">
             <source media="(min-width: 700px)" srcset="~/Red/img/WordCloud.png">
             <source media="(min-width: 200px)" srcset="~/Red/img/mobileWordCloud.PNG">
             <img src="~/Red/img/mobileWordCloud.PNG" alt="Tools" />
         </picture>
-        <picture class="d-flex flex-row justify-content-center">
+        <picture class="d-flex flex-row justify-content-center" style="margin-bottom: 15px">
             <source media="(min-width: 700px)" srcset="~/Red/img/ether.PNG">
             <source media="(min-width: 200px)" srcset="~/Red/img/mobileEther.PNG">
             <img src="~/Red/img/mobileEther.PNG" alt="Ethereum" />
         </picture>
 
-        <picture class="d-flex flex-row justify-content-center">
+        <picture class="d-flex flex-row justify-content-center" style="margin-bottom: 15px">
             <source media="(min-width: 700px)" srcset="~/Red/img/Azure.png">
             <source media="(min-width: 200px)" srcset="~/Red/img/mobileAzure.PNG">
              <img src="~/Red/img/mobileAzure.PNG" alt="Cloudy" style="padding-bottom: 22px;">>
@@ -57,25 +38,26 @@
 </section>
 
 <!--//////////  SECTION ////////// -->
-<section id="newsletter" ng-app="app-email" class="d-flex flex-column">
+<section id="newsletter" ng-app="app-email" class="d-flex flex-column" style="background: white">
     <div class="d-flex flex-row justify-content-center" ng-controller="emailController as vm">
-        <p class="icntitle d-flex flex-row" style="color: white; padding-top: 40px; padding-bottom:60px; margin-bottom:5px; font-size: 38px">Solution Components</p>
+        <p class="icntitle d-flex flex-row" style="color: black; padding-top: 40px; padding-bottom:60px; margin-bottom:5px; font-size: 38px">Solution Components</p>
     </div>   
     <div class="d-flex px-5 flex-row justify-content-around my-3 flex-wrap">
         <div class="callOuts d-flex flex-column flex-fill p-4 mx-2 my-2 my-lg-1 text-center">
             <img src="~/Red/img/modweb.png" class="img-fluid mx-auto d-block">
-            <h3>Modern Web</h3>
+            <h3 style="color: black">Modern Web</h3>
             @* <p>Get your climbing gmodWebear for the season.</p> *@
         </div>
         <div class="callOuts d-flex flex-column flex-fill p-4 mx-2 my-2 my-lg-1 text-center">
             <img src="~/Red/img/SmartContractDev.png" class="img-fluid mx-auto d-block">
-            <h3>D-Apps</h3>
+            <h3 style="color: black">D-Apps</h3>
             @* <p>Run from your troubles with these shoes.</p> *@
         </div>
         <div class="callOuts d-flex flex-column flex-fill p-4 mx-2 my-2 my-lg-1 text-center">
             <img src="~/Red/img/img_Cloud.simple.png" class="img-fluid mx-auto d-block">
-            <h3>Cloud</h3>
+            <h3 style="color: black">Cloud</h3>
         </div>
+     </div>
 </section>
 <section>
     <div class="container">
@@ -166,7 +148,7 @@
 
     @*end container above*@
 </section>
-<footer class="d-flex justify-content-center" style="padding-top: 25px">
+<footer class="d-flex justify-content-center" style="padding-top: 25px; padding-bottom: 25px">
     <p>
         AvantTek Solutions Inc.  New York, NY
     </p>

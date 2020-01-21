@@ -3,11 +3,10 @@
 }
 
 @media (max-width: 768px) {
-
     #intro > div {
         /*padding-top: 200px;*/
-        padding-top: 100px;
-        padding-bottom: 125px
+        padding-top: 25px;
+        padding-bottom: 12px;
     }
 }
 .callOuts {
@@ -19,17 +18,11 @@
 		width: 375px;
 	}
 
-
-
-
-
-
 @media (max-width: 425px) {
-
     #intro > div {
         /*padding-top: 200px;*/
-        padding-top: 100px;
-        padding-bottom: 125px
+        padding-top: 35px;
+        padding-bottom: 25px;
     }
 }
 
