@@ -37,31 +37,20 @@ namespace Workspace.Controllers
         //model.HtmlSection = System.Net.WebUtility.HtmlDecode(s);
 
             return View(model);
-    }
-    public IActionResult solutionv1()
+        }
+         public IActionResult solutionv1()
     
         {
             vmHomeIndex model = new vmHomeIndex();
-
-        
+    
         //model.HtmlSection = System.Web.HttpUtility.HtmlDecode(s);
         //model.HtmlSection = System.Net.WebUtility.HtmlDecode(s);
 
             return View(model);
-    }
+        }
         public IActionResult tester()
         {
             vmHomeIndex model = new vmHomeIndex();
-
-        
-
-            //model.HtmlSection = System.Web.HttpUtility.HtmlDecode(s);
-            //model.HtmlSection = System.Net.WebUtility.HtmlDecode(s);
-
-
-
-            //   model.HtmlSection = "hello world";
-
             return View(model);
         }
        // public IActionResult Portal()
@@ -79,8 +68,8 @@ namespace Workspace.Controllers
 
             return View(model);
         }
-        public IActionResult devTest()
-        {
+        public IActionResult solutionold()
+        {   vmHomeIndex model = new vmHomeIndex();
             return View();     
         }
           public IActionResult alpha()
