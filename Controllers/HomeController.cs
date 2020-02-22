@@ -19,7 +19,7 @@ namespace Workspace.Controllers
             return View(model);
         }
     
-       public IActionResult toc()
+        public IActionResult toc()
         {
             // vmHomeIndex model = new vmHomeIndex();
             vmHomeIndex model = new vmHomeIndex();
@@ -28,8 +28,9 @@ namespace Workspace.Controllers
            // model.HtmlSection = System.Net.WebUtility.HtmlDecode(s);
             return View(model);
     }
-        public IActionResult solution()
+        public IActionResult xsolution()
         {
+   
             vmHomeIndex model = new vmHomeIndex();
 
         
@@ -38,7 +39,18 @@ namespace Workspace.Controllers
 
             return View(model);
         }
-         public IActionResult solutionv1()
+        public IActionResult solution()
+        {
+            vmHomeIndex model = new vmHomeIndex();
+
+            return View(model);
+        }
+    public IActionResult Devsolution()
+        {
+            vmHomeIndex model = new vmHomeIndex();
+            return View(model);
+        }
+    public IActionResult solutionv1()
     
         {
             vmHomeIndex model = new vmHomeIndex();
@@ -48,13 +60,13 @@ namespace Workspace.Controllers
 
             return View(model);
         }
-        public IActionResult tester()
+    public IActionResult tester()
         {
             vmHomeIndex model = new vmHomeIndex();
             return View(model);
         }
        // public IActionResult Portal()
-        public IActionResult tc()
+    public IActionResult tc()
         {
             vmHomeIndex model = new vmHomeIndex();
 
@@ -68,23 +80,23 @@ namespace Workspace.Controllers
 
             return View(model);
         }
-        public IActionResult solutionold()
+    public IActionResult solutionold()
         {   vmHomeIndex model = new vmHomeIndex();
             return View();     
         }
-          public IActionResult alpha()
+     public IActionResult alpha()
         {
             return View();     
         }
-        public IActionResult AvantTekAlpha()
+    public IActionResult AvantTekAlpha()
         {
             return View();
         }
-        public IActionResult About()
+    public IActionResult About()
         {
             return View();
         }
-        public IActionResult temptester()
+    public IActionResult temptester()
         {
             return View();
         }

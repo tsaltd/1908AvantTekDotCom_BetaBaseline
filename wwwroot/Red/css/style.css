@@ -365,6 +365,9 @@ header {
 	float: left;
 	margin: 35px 0 0 30px;
 }
+.white-font{
+	color: white;
+}
 
 /* ========== NEWSLETTER ========== */
 
@@ -493,6 +496,7 @@ header {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
+
 #newsletter form {
 	margin-top: 20px;
 }
@@ -591,4 +595,38 @@ header {
 	margin-bottom: 40px;
 	clear: both;
 	display: block;
+}
+/* #header-1
+{
+	font-size: 30px !important;
+} */
+ #click-it { 
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: maroon;
+	
+}
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 3000px) {
+	#header-1 {
+	  font-size: 45px;
+	}
+	@media screen and (max-width: 560px) {
+		#header-1 {
+		  font-size: 33px;
+		}
+	  }
+	@media screen and (max-width: 450px) {
+		#header-1 {
+		  font-size: 27px;
+		}
+	}
+	@media screen and (max-width: 325px) {
+		#header-1 {
+		  font-size: 23px;
+		}
+	}
 }
