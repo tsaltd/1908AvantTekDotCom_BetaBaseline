@@ -614,19 +614,49 @@ header {
 	#header-1 {
 	  font-size: 45px;
 	}
-	@media screen and (max-width: 560px) {
+	@media screen and (max-width: 765px) {
 		#header-1 {
 		  font-size: 33px;
 		}
 	  }
-	@media screen and (max-width: 450px) {
+	@media screen and (max-width: 560px) {
 		#header-1 {
 		  font-size: 27px;
 		}
 	}
-	@media screen and (max-width: 325px) {
+	@media screen and (max-width: 489px) {
 		#header-1 {
 		  font-size: 23px;
+		}
+	}
+	@media screen and (max-width: 417px) {
+		#header-1 {
+		  font-size: 20px;
+		}
+	}
+}
+@media screen and (max-width: 3000px) {
+	#header-2 {
+	  font-size: 38px;
+	}
+	@media screen and (max-width: 765px) {
+		#header-2 {
+		  font-size: 28px;
+		}
+	  }
+	@media screen and (max-width: 560px) {
+		#header-2 {
+		  font-size: 23px;
+		}
+	}
+	@media screen and (max-width: 489px) {
+		#header-2 {
+		  font-size: 19.5px;
+		}
+	}
+	@media screen and (max-width: 417px) {
+		#header-2 {
+		  font-size: 17px;
 		}
 	}
 }
