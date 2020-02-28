@@ -36,9 +36,9 @@ namespace Workspace
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
           
-#pragma warning disable CS0618 // Type or member is obsolete
+/* #pragma warning disable CS0618 // Type or member is obsolete
             loggerFactory.AddDebug();
-#pragma warning restore CS0618 // Type or member is obsolete
+#pragma warning restore CS0618 // Type or member is obsolete */
 
             if (env.IsDevelopment())
             {
