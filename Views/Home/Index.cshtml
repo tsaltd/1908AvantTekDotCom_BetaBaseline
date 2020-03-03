@@ -59,17 +59,33 @@
     </div>
 </section>
 <!--////////// NEWSLETTER SECTION ////////// -->
-<section id="newsletter">
-    <div class="d-flex justify-content-center p-5 img-fluid" data-wow-delay="0">
-        <img src="~/Red/img/brightIdea03.png" alt="Ethereum" />
+
+<section id="click-it" style="background-color: #df4c3c; padding-top: 30px; padding-bottom: 20px;">
+    <div class="container">
+        @* <span class="d-flex flex-col justify-content-center white-font pt-5"id="header-1">Platforms for Transformation</span> *@
+        <span class="d-flex flex-row justify-content-center icntitle" style="font-size: 25px; padding-bottom: 0px">Platforms for Transformation</span>
+    </div>    
+    <div class="container">
+        <span class="d-flex flex-row justify-content-center icntitle" style="font-size: 23px;">Digital EcoSpheres</span>
+    </div>
+    <div class="container">
+        <div class="d-flex justify-content-center" style="padding-bottom: 15px">
+             <a href='@Url.Action("Solution","Home")'>
+                <img src="~/Red/img/brightIdea03.png" title="Core Components" data-pin-nopin="true" />
+            </a>
+        </div>
+    </div>
+    <div class="container p">
+        <div class="d-flex justify-content-center" style="font-size: 19px;">
+             <a href='@Url.Action("Solution","Home")'>...more
+                @* <img src="~/Red/img/brightIdea03.png" title="Core Components" data-pin-nopin="true" /> *@
+            </a>
+        </div>
     </div>
     
-    <h3 class="d-flex flex-row justify-content-center">
-        @Html.ActionLink("The Solution", "Solution", "Home", null, new { @class = "btn btn-primary btn-large" })
-        @* <a class="btn btn-primary" style="margin-top: 0px; margin-bottom: 10px; border-radius: 8px; border: 2px solid rgba(0, 70, 147, 0.75); COLOR: WHITE;  BACKGROUND-COLOR: #34495E" type="submit" href="http://localhost:5000/Home/solution">The Solution ===></a> *@
-    </h3>
 </section>
 <!--////////// NEWSLETTER SECTIO ////////// -->
+
 <!--////////// DOWNLOAD SECTION ////////// -->
 <footer style="padding-top: 32px">
     <p>

@@ -10,57 +10,44 @@
         vertical-align: bottom;
     }
 </style>
-@{
-    ViewData["Title"] = "Index";
-    Layout = "_LayoutRed";}
 <section id="intro" class="intro-well" style="padding-top: 25px;padding-bottom: 5px;">
     <div class="container">
-            <h2 class="d-flex flex-row justify-content-center" style="padding-bottom: 30px">Digital Eco-Spheres</h2>
+            <h1 class="d-flex flex-row justify-content-center" style="padding-bottom: 30px">AvantTek - On the Frontier</span>
     </div>
     <div class="container"></div>
-            <h3 class="d-flex flex row justify-content-center" style="padding-bottom: 30px">
-                AvantTek Insights</h3> 
+            <h1 class="d-flex flex row justify-content-center" style="padding-bottom: 30px">
+                Digital Eco-Spheres: Core Components</h1> 
     </div>
 </section>
+@* <i class="fas fa-creative-commons-sampling-plus    "></i> *@
+<section id="intro" class="intro-well d-flex justify-content-center" style="padding-top: 25px;padding-bottom: 5px;">
 <!-- ////////// FEATURES SECTION ////////// -->
-<section id="features" style="padding-top: 20px">
-    <div  style="padding-top: 0px">
+<section id="features"  style="padding-top: 20px">    <div  style="padding-top: 0px">
         <picture class="d-flex flex-row justify-content-center" style="margin-bottom: 15px; margin-top: 50px">
             <source media="(min-width: 700px)" srcset="~/Red/img/WordCloud.png">
             <source media="(min-width: 200px)" srcset="~/Red/img/mobileWordCloud.PNG">
             <img src="~/Red/img/mobileWordCloud.PNG" alt="Tools" />
         </picture>
-        <div class="container"></div>
-            <h3 class="d-flex flex row justify-content-center" style="padding-bottom: 30px">
-                Modern Web Toolkits</h3> 
-        </div>
         <picture class="d-flex flex-row justify-content-center" style="margin-bottom: 15px">
             <source media="(min-width: 700px)" srcset="~/Red/img/ether.PNG">
             <source media="(min-width: 200px)" srcset="~/Red/img/mobileEther.PNG">
             <img src="~/Red/img/mobileEther.PNG" alt="Ethereum" />
         </picture>
-        <div class="container"></div>
-            <h3 class="d-flex flex row justify-content-center" style="padding-bottom: 30px">
-                Distributed Ledger Technologies / Blockchain</h3> 
-        </div>
+
         <picture class="d-flex flex-row justify-content-center" style="margin-bottom: 15px">
             <source media="(min-width: 700px)" srcset="~/Red/img/Azure.png">
             <source media="(min-width: 200px)" srcset="~/Red/img/mobileAzure.PNG">
              <img src="~/Red/img/mobileAzure.PNG" alt="Cloudy" style="padding-bottom: 22px;">>
         </picture>
-        <div class="container"></div>
-            <h3 class="d-flex flex row justify-content-center" style="padding-bottom: 30px">
-                Platform as A Service: </h3> 
-        </div>
     </div>
 </section>
 
 <!--//////////  SECTION ////////// -->
-@* <section id="newsletter" ng-app="app-email" class="d-flex flex-column" style="background: white"> *@
+<section id="newsletter" ng-app="app-email" class="d-flex flex-column" style="background: white">
 <section id="newsletter" ng-app="app-email" class="d-flex flex-column ng-scope" style="background: white;padding-bottom: 25px;padding-top: 25px;">
     <div class="d-flex flex-row justify-content-center" ng-controller="emailController as vm">
         <p class="icntitle d-flex flex-row" style="color: black; padding-top: 15px; padding-bottom:30px; margin-bottom:5px; font-size: 38px; font-weight: 500;">Solution Components</p>
-        @* <p class="icntitle d-flex flex-row" style="color: black;padding-top: 20px;padding-bottom: 25px;margin-bottom:5px;font-size: 38px;">Solution Components</p> *@
+        <p class="icntitle d-flex flex-row" style="color: black;padding-top: 20px;padding-bottom: 25px;margin-bottom:5px;font-size: 38px;">Solution Components</p>
     </div>   
     <div class="d-flex px-5 flex-row justify-content-around my-3 flex-wrap">
         <div class="callOuts d-flex flex-column flex-fill p-4 mx-2 my-2 my-lg-1 text-center">
@@ -86,8 +73,8 @@
              border-style: solid;
              border-color: black;
              border-bottom-width: 1px;">
-            <h3 id="header-1" class="d-flex flex-column text-center" style="color: white;margin-bottom: 15px; margin-top: 30px;">Blockchain Ledgers</h3>
-            <h3 id="header-2" class="d-flex flex-column text-center" style="color: white;margin-bottom: 30px; margin-top: 0px;">Transforming Information Management</h3> 
+            <h3 id="header-1" class="d-flex flex-row content-align-center" style="color: white;margin-bottom: 15px; margin-top: 30px;">Blockchain Ledgers</h3>
+            <h3 id="header-2" class="d-flex flex-row content-align-center" style="color: white;margin-bottom: 30px; margin-top: 0px;">Transforming Information Management</h3> 
         </div>
         <div id="header-2" class="d-flex flex-column text-center" style="color: black;margin-bottom: 30px; margin-top: 30px;"></div>
         <div class="row"></div>
