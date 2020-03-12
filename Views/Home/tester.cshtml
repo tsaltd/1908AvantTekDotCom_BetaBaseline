@@ -10,46 +10,15 @@
         vertical-align: bottom;
     }
 </style>
-@{
-    ViewData["Title"] = "Index";
-    Layout = "_LayoutRed";
-}
-<section id="click-it" style="background-color: #df4c3c; padding-top: 30px; padding-bottom: 20px;">
-    <div class="container">
-        <div id="avantCust" class="d-flex d-row" style="margin-top: 20px;margin-bottom: 7px;">Moving To<div>
-        <div id="avantCust" class="d-flex d-row" style="margin-top: 20px;margin-bottom: 7px;">Decentralized Worlds<div>
-    </div>  
-</section>
-<section id="wet">
-    <div class="container">
-        <div class="d-flex">
-             <h1 class="flex-row justify-content-center">Moving To</h1>
-    </div>
-             <div id="avantCust" class="d-flex d-row" style="margin-top: 20px;margin-bottom: 7px;">De-Centralized Worlds</div>
+<section id="intro" class="intro-well wow d-flex flex-row justify-content-center" style="padding-top: 60px;padding-bottom: 65px;">
+    <div class="d-flex flex-column justify-content-center">
+        <h1>Distributed Application Platforms</h1>
     </div>
 </section>
-<section id="intro" class="intro-well wow animated bounceIn justify-content-center" style="padding-top: 60px;padding-bottom: 65px;">
-    <div class="container">
-         <div class="d-flex flex-row justify-content-center m-1">
-             <h1>From Distributed Apps</h1>
-             <div id="avantCust" class="d-flex d-row" style="margin-top: 20px;margin-bottom: 7px;">Adventures in Digital Transformation</div>
-         </div>
-    </div>
-    <div class="container">
-         <div class="d-flex flex-row justify-content-center m-1">
-             <h1>To</h1>
-         </div>
-    </div>
-    <div class="container">
-         <div class="d-flex flex-row justify-content-center m-1">
-             <h1>Digital EcoSystems</h1>
-         </div>
-    </div>
-</section>
-<section id="features" style="padding-top: 20px">
-     <div class="container">
-        @* <span class="d-flex flex-col justify-content-center white-font pt-5"id="header-1">Platforms for Transformation</span> *@
-        <span class="d-flex icntitle flex-row justify-content-center icntitle m-5 p-5" style="font-size: 38px">d-Apps 1.0</span>
+<section id="features" style="padding-top: 10px">
+     <div class="container"></div>
+        @* <span lass="d-flex flex-col justify-content-center white-font pt-5"id="header-1">Platforms for Transformation</span> *@
+        <span class="d-flex icntitle flex-row justify-content-center icntitle m-5 p-5" style="font-size: 38px">Distributed Ledger Technology</span>
     </div> 
     <div>
         <picture class="d-flex flex-row justify-content-center">
@@ -57,55 +26,26 @@
             <source media="(min-width: 200px)" srcset="~/Red/img/mobileWordCloud.PNG">
             <img src="~/Red/img/mobileWordCloud.PNG" alt="Tools" />
         </picture>
-        <div class="container">
-            <h3 class="d-flex flex-row justify-content-center">
-                 &lt &lt Dev-Tools >></h3> 
-        </div>
+        
         <picture class="d-flex flex-row justify-content-center">
             <source media="(min-width: 700px)" srcset="~/Red/img/ether.PNG">
             <source media="(min-width: 200px)" srcset="~/Red/img/mobileEther.PNG">
             <img src="~/Red/img/mobileEther.PNG" alt="Ethereum" />
         </picture>
 
-        <div class="container">
-            <h3 class="d-flex flex row justify-content-center">
-               &lt &lt Blockchain Ledger >></h3> 
-        </div>
+        
         <picture class="d-flex flex-row justify-content-center">
             <source media="(min-width: 700px)" srcset="~/Red/img/Azure.png">
             <source media="(min-width: 200px)" srcset="~/Red/img/mobileAzure.PNG">
              <img src="~/Red/img/mobileAzure.PNG" alt="Cloudy">>
         </picture>
-        <div class="container">
-            <h3 class="d-flex flex row justify-content-center">
-               &lt &lt Cloud Platform >></h3>
-        </div>
+        
     </div>
 </section>
 
 <!--//////////  SECTION ////////// -->
 @* <section id="newsletter" ng-app="app-email" class="d-flex flex-column" style="background: white"> *@
-<section id="newsletter" ng-app="app-email" class="d-flex flex-column ng-scope" style="background: white;padding-bottom: 25px;padding-top: 25px;">
-    <div class="d-flex flex-row justify-content-center" ng-controller="emailController as vm">
-        <p class="icntitle d-flex flex-row" style="color: black; padding-top: 15px; padding-bottom:30px; margin-bottom:5px; font-size: 38px; font-weight: 500;">Solution Components</p>
-        @* <p class="icntitle d-flex flex-row" style="color: black;padding-top: 20px;padding-bottom: 25px;margin-bottom:5px;font-size: 38px;">Solution Components</p> *@
-    </div>   
-    <div class="d-flex px-5 flex-row justify-content-around my-3 flex-wrap">
-        <div class="callOuts d-flex flex-column flex-fill p-4 mx-2 my-2 my-lg-1 text-center">
-            <img src="~/Red/img/modweb.png" class="img-fluid mx-auto d-block">
-            <h3 style="color: black;margin-top: 33px; margin-bottom: 0px;">The Modern Web</h3>
-        
-        </div>
-        <div class="callOuts d-fmargin-top: 22px; flex-column flex-fill p-4 mx-2 my-2 my-lg-1 text-center">
-            <img src="~/Red/img/SmartContractDev.png" class="img-fluid mx-auto d-block">
-            <h3 style="color: black">D-Apps</h3>
-        </div>
-        <div class="callOuts d-flex flex-column flex-fill p-4 mx-2 my-2 my-lg-1 text-center">
-            <img src="~/Red/img/img_Cloud.simple.png" class="img-fluid mx-auto d-block">
-            <h3 style="color: black; margin-top: 27px;">Cloud</h3>
-     </div>
 
-</section>
 @* <section style="background-color: white"> *@
 <section>
     <div class="container" style="background: white">
