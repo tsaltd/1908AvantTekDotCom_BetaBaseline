@@ -28,7 +28,7 @@ namespace Workspace.Controllers
            // model.HtmlSection = System.Net.WebUtility.HtmlDecode(s);
             return View(model);
     }
-        public IActionResult xsolution()
+        public IActionResult newsolution()
         {
    
             vmHomeIndex model = new vmHomeIndex();
