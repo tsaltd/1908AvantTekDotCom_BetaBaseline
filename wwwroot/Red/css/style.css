@@ -466,10 +466,10 @@ header {
 	padding-top: 20px;
 }
 #intro {
-	padding-bottom: 35px;
+	padding-bottom: 20px;
 }
 #intro h1 {
-	font-size: 37px;
+	font-size: 40px;
 	line-height: 40px;
 }
 #intro h2 {
@@ -542,9 +542,9 @@ header {
 	padding-top: 20px;
 	}
 	#intro h1 {
-	font-size: 48px;
-	line-height: 48px;
-	}
+		font-size: 48px;
+		line-height: 48px;
+		}
 	#intro h2 {
 	font-size: 18px;
 	line-height: 22px;
