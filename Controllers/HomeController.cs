@@ -96,7 +96,7 @@ namespace Workspace.Controllers
         {
             return View();
         }
-    public IActionResult temptester()
+    public IActionResult newSolutionsaved()
         {
             return View();
         }
