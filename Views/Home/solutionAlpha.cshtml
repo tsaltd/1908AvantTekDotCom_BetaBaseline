@@ -20,18 +20,23 @@
     </div>
 </section>
 <section style="padding-top: 10px">
-     <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center">
         <p class="icntitle p-2 m-4" style="color: #00bcf2; font-weight: 400; font-size: 38px">
             Distributed Ledger Components
         </p>
     </div>
-    <div class= "d-flex justify-content-center flex-wrap">
-            <button class="btn btn-link justify-content-center p" type="button" data-toggle="collapse" data-target="#collapseExample01"
-                    aria-expanded="false" aria-controls="collapseExample01">Dev Tools</button>
-            <button class="btn btn-link justify-content-center p" type="button" data-toggle="collapse" data-target="#collapseExample02"
-                    aria-expanded="false" aria-controls="collapseExample02">Information Management</button>
-            <button class="btn btn-link justify-content-center p" type="button" data-toggle="collapse" data-target="#collapseExample03"
-                    aria-expanded="false" aria-controls="collapseExample03">Cloud Hosting</button>
+    @* <div class= "d-flex justify-content-center flex-wrap">
+                <button class="btn btn-link justify-content-center p" type="button" data-toggle="collapse" data-target="#collapseExample01"
+                        aria-expanded="false" aria-controls="collapseExample01">Dev Tools</button>
+                <button class="btn btn-link justify-content-center p" type="button" data-toggle="collapse" data-target="#collapseExample02"
+                        aria-expanded="false" aria-controls="collapseExample02">Information Management</button>
+                <button class="btn btn-link justify-content-center p" type="button" data-toggle="collapse" data-target="#collapseExample03"
+                        aria-expanded="false" aria-controls="collapseExample03">Cloud Hosting</button>
+        </div> *@
+    <div class="d-flex justify-content-center flex-wrap">
+        <button class="btn btn-link justify-content-center p" type="button" id="DevButton">Dev Tools</button>
+        <button class="btn btn-link justify-content-center p" type="button" id="InfoButton">Infoemation Management</button>
+        <button class="btn btn-link justify-content-center p" type="button" id="CloudButton">Cloud Hosting</button>
     </div>
 </section>
 <section id="features" style="padding-top: 40px">
@@ -52,7 +57,7 @@
             <img src="~/Red/img/mobileEther.PNG" alt="Ethereum" />
         </picture>
         <div class="collapse" id="collapseExample02">
-            <div class="card card-body">
+            <div class="card card-bocollapseExample02dy">
                 Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
             </div>
         </div>
@@ -63,9 +68,10 @@
         </picture>
         <div class="collapse" id="collapseExample03">
             <div class="card card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
             </div>
         </div>
+    </div>
 </section>
 <footer class="d-flex justify-content-center" style="padding-top: 25px; padding-bottom: 25px">
     <p>
@@ -76,7 +82,50 @@
 <script>
     $(function () {
         $(window).on("load resize", function () {
-            $(".fill-screen").css("height", window.innerHeight);});
-
-});
+            $(".fill-screen").css("height", window.innerHeight);
+        });
+    });
 </script>
+@*<script type="text/javascript">
+    ($document).ready(function () {
+        $('#DevButton'.click(function () {
+            $('#collapseExample02').collapse('toggle');
+        }));
+    });
+</script>*@
+@*<script>
+    $(document).ready(function () {
+
+        //console.log('sksksk')
+        $('.alert').show()
+
+    });
+</script>*@
+<script>
+ $(document).ready(function () {
+  $('#DevButton').click(function () {
+            $('.alert').show("it is me");
+        })
+    });
+</script>
+@*<script type="text/javascript">
+    ($document).ready(function () {
+        //$('_#DevButton'.click(function () {
+            alert('hello');
+        }));
+    });
+</script>
+<script type="text/javascript">
+    ($document).ready(function () {
+        $('#DevButton').click(function () {
+            $('.alert').show()
+        })
+    });
+</script>
+<script type="text/javascript">
+    ($document).ready(function () {
+        $('#DevButton').click(function () {
+            $('.alert').show()
+        })
+    });
+</script>*@
