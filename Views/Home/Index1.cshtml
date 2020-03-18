@@ -79,10 +79,46 @@
     </p>
 </footer>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/js/FlexBox/jquery/jquery.slim.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+<script src="~/lib/twitter-bootstrap/js/bootstrap.min.js"></script>
+<script src="~/js/FlexBox/popper.js/popper.min.js"></script>
+<script src="~/lib/angular/angular.js"></script>
+<script src="~/js/avant-app-email.js"></script>
+<script src="~/js/avant-controller-email.js"></script>
 <script>
     $(function () {
         $(window).on("load resize", function () {
             $(".fill-screen").css("height", window.innerHeight);
         });
+    });
+</script>
+<script type="text/javascript">
+    ($document).ready(function () {
+        $('#DevButton'.click(function () {
+            $('#collapseExample02').collapse('toggle');
+        }));
+    });
+</script>\
+<script>
+    $(document).ready(function () {
+
+        console.log('')
+
+    });
+</script>
+<script type="text/javascript">
+    ($document).ready(function () {
+        $('_#DevButton'.click(function () {
+            alert('hello');
+        }));
+    });
+</script>
+<script type="text/javascript">
+    ($document).ready(function () {
+        $('#DevButton').click(function () {
+            $('.alert').show()
+        })
     });
 </script>
