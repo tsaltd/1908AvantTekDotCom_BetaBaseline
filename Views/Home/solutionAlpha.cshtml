@@ -1,0 +1,101 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "_LayoutRed";}
+
+@model Workspace.ViewModels.vmHomeIndex;
+<style>
+    img {
+        max-width: 100%;
+        height: auto;
+        vertical-align: bottom;
+    }
+</style>
+<section id="intro" class="intro-well d-flex flex-row justify-content-center" style="padding-top: 60px;padding-bottom: 65px;">
+    <div class="d-flex flex-column justify-content-center">
+        <h1>DeCentralized Platforms</h1>
+        <!-- <h1>Adventures in Digital Transformation<h1> -->
+        <div id="avantCust" class="d-flex d-row" style="margin-top: 20px;margin-bottom: 7px;">
+            Creating Digital EcoSystems
+        </div>
+    </div>
+</section>
+<section style="padding-top: 10px">
+     <div class="d-flex justify-content-center">
+        <p class="icntitle" style="color: #00bcf2; font-weight: 500; padding-top: 20px; margin-bottom:5px; font-size: 38px">Distributed Ledger Solutions</p>
+    </div>
+</section>
+<section id="features" style="padding-top: 10px">
+    <div>
+        <picture class="d-flex flex-row justify-content-center">
+            <source media="(min-width: 700px)" srcset="~/Red/img/WordCloud.png">
+            <source media="(min-width: 200px)" srcset="~/Red/img/mobileWordCloud.PNG">
+            <img src="~/Red/img/mobileWordCloud.PNG" alt="Tools" />
+        </picture>
+        <div class="d-flex justify-content-center">Web Toolkits</div>
+        <p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample01"
+                    aria-expanded="false" aria-controls="collapseExample01">
+                Web Toolkits
+            </button>
+        </p>
+        <div class="collapse" id="collapseExample01">
+            <div class="card card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+        </div>
+        <picture class="d-flex flex-row justify-content-center">
+            <source media="(min-width: 700px)" srcset="~/Red/img/ether.PNG">
+            <source media="(min-width: 200px)" srcset="~/Red/img/mobileEther.PNG">
+            <img src="~/Red/img/mobileEther.PNG" alt="Ethereum" />
+        </picture>
+        <div class="d-flex justify-content-center">Apps and Info</div>
+        <p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample02"
+                    aria-expanded="false" aria-controls="collapseExample02">
+                Web Toolkits
+            </button>
+        </p>
+        <div class="collapse" id="collapseExample02">
+            <div class="card card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+        </div>
+        <picture class="d-flex flex-row justify-content-center">
+            <source media="(min-width: 700px)" srcset="~/Red/img/Azure.png">
+            <source media="(min-width: 200px)" srcset="~/Red/img/mobileAzure.PNG">
+            <img src="~/Red/img/mobileAzure.PNG" alt="Cloudy">
+        </picture>
+        <div class="d-flex justify-content-center">Cloud Hosting</div>
+    </div>
+        <p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample03" 
+                aria-expanded="false" aria-controls="collapseExample">Cloud Hosting03</button>
+        </p>
+        <div class="collapse" id="collapseExample03">
+            <div class="card card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+        </div>
+</section>
+<footer class="d-flex justify-content-center" style="padding-top: 25px; padding-bottom: 25px">
+    <p>
+        AvantTek Solutions Inc.  New York, NY
+    </p>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script>
+    $(function () {
+        $(window).on("load resize", function () {
+            $(".fill-screen").css("height", window.innerHeight);});
+    });
+$(document).ready(function() {
+$('[data-toggle="collapse"]').click(function() {
+  $(this).toggleClass( "active" );
+  if ($(this).hasClass("active")) {
+    $(this).text("Hide");
+  } else {
+    $(this).text("Show");
+  }
+});
+});
+</script>
