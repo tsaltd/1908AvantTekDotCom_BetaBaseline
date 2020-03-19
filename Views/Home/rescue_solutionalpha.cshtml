@@ -25,55 +25,53 @@
             Distributed Ledger Components
         </p>
     </div>
-    @* <div class= "d-flex justify-content-center flex-wrap">
-                <button class="btn btn-link justify-content-center p" type="button" data-toggle="collapse" data-target="#collapseExample01"
-                        aria-expanded="false" aria-controls="collapseExample01">Dev Tools</button>
-                <button class="btn btn-link justify-content-center p" type="button" data-toggle="collapse" data-target="#collapseExample02"
-                        aria-expanded="false" aria-controls="collapseExample02">Information Management</button>
-                <button class="btn btn-link justify-content-center p" type="button" data-toggle="collapse" data-target="#collapseExample03"
-                        aria-expanded="false" aria-controls="collapseExample03">Cloud Hosting</button>
-        </div> *@
     <div class="d-flex justify-content-center flex-wrap">
         <button class="btn btn-link justify-content-center p" type="button" id="DevButton">Dev Tools</button>
-        <button class="btn btn-link justify-content-center p" type="button" id="InfoButton">Infoemation Management</button>
+        <button class="btn btn-link justify-content-center p" type="button" id="InfoButton">Information Management</button>
         <button class="btn btn-link justify-content-center p" type="button" id="CloudButton">Cloud Hosting</button>
     </div>
 </section>
-<section id="features" style="padding-top: 40px">
-    <div>
-        <picture class="d-flex flex-row justify-content-center">
-            <source media="(min-width: 700px)" srcset="~/Red/img/WordCloud.png">
-            <source media="(min-width: 200px)" srcset="~/Red/img/mobileWordCloud.PNG">
-            <img src="~/Red/img/mobileWordCloud.PNG" alt="Tools" />
-        </picture>
-        <div class="collapse" id="collapseExample01">
-            <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+ <section id="features" style="padding-top: 40px">
+            <div>
+                <picture class="d-flex flex-row justify-content-center">
+                    <source media="(min-width: 700px)" srcset="/Red/img/WordCloud.png">
+                    <source media="(min-width: 200px)" srcset="/Red/img/mobileWordCloud.PNG">
+                    <img src="/Red/img/mobileWordCloud.PNG" alt="Tools" />
+                </picture>
+                <div class="collapse" id="collapseExample01">
+                    <div class="card card-body d-flex">
+                        <h4 class="card-title d-flex justify-content-center">Card title</h4>
+                        <p class="card-text d-flex justify-content-center">Some example text. Some example text.</p>
+                        <a href="#" class="card-link justify-content-end">x</a>
+                    </div>
+                </div>
+                <picture class="d-flex flex-row justify-content-center">
+                    <source media="(min-width: 700px)" srcset="/Red/img/ether.PNG">
+                    <source media="(min-width: 200px)" srcset="/Red/img/mobileEther.PNG">
+                    <img src="/Red/img/mobileEther.PNG" alt="Ethereum" />
+                </picture>            
+                <picture class="d-flex flex-row justify-content-center">
+                        <source media="(min-width: 700px)" srcset="/Red/img/Azure.png">
+                        <source media="(min-width: 200px)" srcset="/Red/img/mobileAzure.PNG">
+                        <img src="/Red/img/mobileAzure.PNG" alt="Cloudy">
+                 </picture>
+         </div>
+        <div class=d-flex>
+            <div></div>
+            <div>
+                <div class="collapse" id="collapseExample01">
+                    @* <div class="card card-body d-flex">
+                        <h4 class="card-title d-flex justify-content-center">Card title</h4>
+                        <p class="card-text d-flex justify-content-center">Some example text. Some example text.</p>
+                        <a href="#" class="card-link justify-content-end">x</a>
+                    </div> *@
+                </div>
             </div>
+            <div></div>
         </div>
-        <picture class="d-flex flex-row justify-content-center">
-            <source media="(min-width: 700px)" srcset="~/Red/img/ether.PNG">
-            <source media="(min-width: 200px)" srcset="~/Red/img/mobileEther.PNG">
-            <img src="~/Red/img/mobileEther.PNG" alt="Ethereum" />
-        </picture>
-        <div class="collapse" id="collapseExample02">
-            <div class="card card-bocollapseExample02dy">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            </div>
-        </div>
-        <picture class="d-flex flex-row justify-content-center">
-            <source media="(min-width: 700px)" srcset="~/Red/img/Azure.png">
-            <source media="(min-width: 200px)" srcset="~/Red/img/mobileAzure.PNG">
-            <img src="~/Red/img/mobileAzure.PNG" alt="Cloudy">
-        </picture>
-        <div class="collapse" id="collapseExample03">
-            <div class="card card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-            </div>
-        </div>
-    </div>
-</section>
-<footer class="d-flex justify-content-center" style="padding-top: 25px; padding-bottom: 25px">
+        </section>
+        
+<footer class="d-flex justify-content-center m-3" style="padding-top: 25px; padding-bottom: 25px">
     <p>
         AvantTek Solutions Inc.  New York, NY
     </p>
@@ -86,46 +84,3 @@
         });
     });
 </script>
-@*<script type="text/javascript">
-    ($document).ready(function () {
-        $('#DevButton'.click(function () {
-            $('#collapseExample02').collapse('toggle');
-        }));
-    });
-</script>*@
-@*<script>
-    $(document).ready(function () {
-
-        //console.log('sksksk')
-        $('.alert').show()
-
-    });
-</script>*@
-<script>
- $(document).ready(function () {
-  $('#DevButton').click(function () {
-            $('.alert').show("it is me");
-        })
-    });
-</script>
-@*<script type="text/javascript">
-    ($document).ready(function () {
-        //$('_#DevButton'.click(function () {
-            alert('hello');
-        }));
-    });
-</script>
-<script type="text/javascript">
-    ($document).ready(function () {
-        $('#DevButton').click(function () {
-            $('.alert').show()
-        })
-    });
-</script>
-<script type="text/javascript">
-    ($document).ready(function () {
-        $('#DevButton').click(function () {
-            $('.alert').show()
-        })
-    });
-</script>*@
