@@ -13,7 +13,18 @@ $(document).ready(function () {
     });
     $('#CloudButton').click(function () {
         $('#collapseExample03').collapse('toggle');
-        $('#collapseExample02').collapse('hide');
         $('#collapseExample01').collapse('hide');
+        $('#collapseExample02').collapse('hide');
+        
     });
+    $("#picTools").click(function() {
+        $( "#DevButton" ).click();
+      });
+      $("#picEth01").click(function() {
+        $( "#InfoButton" ).click();
+      });
+      $("#picCloud01").click(function() {
+        $( "#CloudButton" ).click();
+      });
+        
 }); 
