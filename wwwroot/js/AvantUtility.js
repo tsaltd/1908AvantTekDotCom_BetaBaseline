@@ -26,5 +26,7 @@ $(document).ready(function () {
       $("#picCloud01").click(function() {
         $( "#CloudButton" ).click();
       });
+  
+      $('.cpoint').css('cursor', 'pointer');
         
 }); 
