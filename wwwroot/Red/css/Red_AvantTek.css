@@ -106,3 +106,10 @@
 	color: BLACK !important;
 
 }
+.callOuts{ 
+	border: 1px solid black;
+}
+.callOuts img{ 
+		height: auto;
+		width: 150px	
+}
