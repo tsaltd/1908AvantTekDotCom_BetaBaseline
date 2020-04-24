@@ -107,9 +107,9 @@
 
 }
 .callOuts{ 
-	border: 1px solid black;
+	border: 1px solid white;
 }
-.callOuts img{ 
+ .callOuts img{ 
 		height: auto;
-		width: 150px	
-}
+		width: auto;	
+} 
