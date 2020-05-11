@@ -41,6 +41,15 @@
     margin: 0px auto;
 }
 
+#lab {
+	color:red;
+}
+.container{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	text-align-last: center;
+}
 
 #avantCust {
 	font-family: 'Lato', sans-serif !important;
@@ -118,9 +127,6 @@
   .w-5 {
 	width: 5% !important;
   }
-.w-70 {
-	width: 70% !important;
-  }
 .w-80 {
 	width: 80% !important;
 }
@@ -150,8 +156,8 @@
 .w-15 {
 	width:15% !important;
 }
-.w-85 {
-	width:85% !important;
+.w-90 {
+	width:90% !important;
 }
   .col_Line01 {
 	/* text-align: justify; 
@@ -166,4 +172,5 @@
 	text-align-last: center;*/
 	font-size: 20px; 
 	font-weight:400;
+	text-align-last: center;
 }
