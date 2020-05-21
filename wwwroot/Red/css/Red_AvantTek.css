@@ -151,11 +151,17 @@
 .w-25 {
 	width: 25% !important;
 }
+.w-55 {
+	width: 55% !important;
+}
+.w-35 {
+	width: 35% !important;
+}
 .w-40 {
-	width: 40 !important;
+	width: 40% !important;
   }
 .w-45 {
-	width: 45 !important;
+	width: 45% !important;
   }
 .w-60 {
 	width:60% !important;
@@ -174,6 +180,9 @@
 .w-90 {
 	width:90% !important;
 }
+.w-65{
+	width:65% !important;
+}
   .col_Line01 {
 	/* text-align: justify; 
 	text-justify: inter-character;
@@ -185,6 +194,6 @@
 	/*text-align: justify; 
 	text-justify: inter-character;
 	text-align-last: center;*/
-	font-size: 20px; 
+	font-size: 18px; 
 	font-weight:400;
 }
