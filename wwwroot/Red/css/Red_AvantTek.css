@@ -197,3 +197,9 @@
 	font-size: 18px; 
 	font-weight:400;
 }
+.br200 {
+	/*text-align: justify; 
+	text-justify: inter-character;
+	text-align-last: center;*/
+	font-size: 80px; 
+}

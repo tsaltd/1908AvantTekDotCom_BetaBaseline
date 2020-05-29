@@ -19,15 +19,16 @@ namespace Workspace.Controllers
             return View(model);
         }
     
-        public IActionResult toc()
+        public IActionResult badsolution()
         {
             // vmHomeIndex model = new vmHomeIndex();
             vmHomeIndex model = new vmHomeIndex();
 
-                //model.HtmlSection = System.Web.HttpUtility.HtmlDecode(s);
-           // model.HtmlSection = System.Net.WebUtility.HtmlDecode(s);
+            
+            //model.HtmlSection = System.Web.HttpUtility.HtmlDecode(s);
+            //model.HtmlSection = System.Net.WebUtility.HtmlDecode(s);
             return View(model);
-    }
+        }
         public IActionResult disint()
         {
             // vmHomeIndex model = new vmHomeIndex();
