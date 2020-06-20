@@ -1,7 +1,12 @@
 {
     "eslint.enable": false,
     "editor.matchBrackets": false,
-    "liveServer.settings.multiRootWorkspaceName": "1908AvantTekDotCom_BetaBaseline"
+    "liveServer.settings.multiRootWorkspaceName": "1908AvantTekDotCom_BetaBaseline",
+    "liveSassCompile.settings.autoprefix": [],
+    "liveSassCompile.settings.formats": [
 
-}
 
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/newred"
