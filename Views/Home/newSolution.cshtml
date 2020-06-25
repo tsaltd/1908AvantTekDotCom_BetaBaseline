@@ -3,13 +3,6 @@
     Layout = "_LayoutRed";}
 
 @model Workspace.ViewModels.vmHomeIndex;
-<style>
-    img {
-        max-width: 100%;
-        height: auto;
-        vertical-align: bottom;
-    }
-</style>
 <section id="intro" class="intro-well wow d-flex flex-row animated bounceIn justify-content-center" style="padding-top: 20px;padding-bottom: 20px;">
     <div class="d-flex flex-column justify-content-center">
         <div id="avantCust" class="d-flex d-row mx-3" style="margin-top: 20px;margin-bottom: 7px;">
@@ -109,20 +102,11 @@
         @*Heading*@
         @*3-column-block*@
         <div class="justify-content-center flex-row d-flex">
-            @*left margin*@
-            <div class="d-flex w-5"></div>
-            @*middle text body*@
-
-            <div class="d-flex">
-                <div class="d-flex justify-content-center">
-                    @*Heading*@
-                    @*3-column-block*@
-                    <div class="av_content justify-content-center flex-row d-flex">
                         @*left margin*@
-                        <div class="d-flex w-10"></div>
+                        <div class="d-flex w-0"></div>
                         @*middle text body*@
                         @*<div class="d-flex w-80 mr-5 flex-column justify-content-center">*@
-                        <div class="w-80 flex-colum mt-4 ml-3" style="font-size:22px;font-weight:500;">
+                        <div class="w-90 flex-colum mt-4 ml-3" style="font-size:22px;font-weight:500;">
                             <h4 style="font-size:22px;font-weight:600;">With centralized platforms</h4>
                             @*<h4 style="font-weight:600;">Digital ledgers on de‑centralized networks have:</h4>*@
                             <ul class="d-flex flex-column">
@@ -139,8 +123,8 @@
                                 <li>
                                     <span class="d-flex mb-1 mt-3">The owning entity has control over all processing.<br>Your bank can decide to turn off its portal and online services will cease to exist for you and all other customers</span>
                                 </li>
-                                </ul>
-                                <span class="d-flex mb-1 mt-0 ml-5 mr-5 pr-5" style="font-size: 18px;"></span>
+                            </ul>
+                                @* <span class="d-flex mb-1 mt-0 ml-5 mr-5 pr-5" style="font-size: 18px;"></span> *@
                         </div>
                         
                     </div>
@@ -164,7 +148,7 @@
             </p>
              <span class="pb-1" style="text-align:center;">
                 Anyone can set-up a node on a public digital ledger<br>Out&#8209;of&#8209;the&#8209;box security and encryption DLT protocols make for a tamper-proof environment with strong data integrity.
-            </>
+            </span>
             <BR>
             <span class="pb-1">
                 <span style="font-size:35px;text-align:center;">&#149;&#149;&#149;</span>
@@ -173,7 +157,7 @@
                 Many DLT eco-spheres cannot be public and require secured services that can only be accesed by platform administrators for: 
             </p>
         </div>
-        <div class="d-flex w-5">2</div>
+        <div class="d-flex w-10">2</div>
     </div>
     <div class="d-flex justify-content-center">
         @*Heading*@
@@ -345,11 +329,11 @@
             Platform Components
         </p>
     </div>
-    <div class="d-flex justify-space-around justify-content-center">
+   @*  <div class="d-flex justify-space-around justify-content-center">
         <button class="btn btn-link justify-content-center p" type="button" id="DevButton">Dev Tools</button>
         <button class="btn btn-link justify-content-center p" type="button" id="InfoButton">De&#8209;Centralized<br>Ledger</button>
         <button class="btn btn-link justify-content-center p" type="button" id="CloudButton">Cloud Hosting</button>
-    </div>
+    </div> *@
 </section>
 <section id="features" style="padding-top: 40px">
     <div id="picTools">
