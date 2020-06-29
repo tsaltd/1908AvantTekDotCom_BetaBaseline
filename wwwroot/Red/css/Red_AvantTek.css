@@ -109,6 +109,12 @@
 	color: BLACK !important;
 
 }
+.ulBullSQ {
+
+
+	list-style-type: square;
+
+}
 .callOuts{ 
 	border: 1px solid white;
 }
@@ -185,7 +191,4 @@
 	text-justify: inter-character;
 	text-align-last: center;*/
 	font-size: 80px; 
-}
-ul.bullRound {
-	list-style-type: square;
 }
