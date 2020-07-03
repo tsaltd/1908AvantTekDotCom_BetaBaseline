@@ -5,10 +5,10 @@
 @model Workspace.ViewModels.vmHomeIndex;
 <section id="intro" class="intro-well wow d-flex flex-row animated bounceIn justify-content-center" style="padding-top: 20px;padding-bottom: 20px;">
     @*<div class="d-flex">
-        <span class="my-1">
-            <span style="font-size:35px;text-align:center;">&#9642;&#9642;&#9642;</span>
-        </span>
-    </div>*@
+            <span class="my-1">
+                <span style="font-size:35px;text-align:center;">&#9642;&#9642;&#9642;</span>
+            </span>
+        </div>*@
     <div class="d-flex flex-column justify-content-center">
         <div id="avantCust" class="d-flex d-row mx-3" style="margin-top: 20px;margin-bottom: 7px;">
             <img src="~/Red/img/sigbeta00.png" alt="AvantTek !" data-pin-nopin="true" />
@@ -26,18 +26,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" style="font-weight:600; color:black;"  href='@Url.Action("Index","Home")'>Modern Web...</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link"  style="font-weight:600;color:black;"href='@Url.Action("Solution","Home")'>Distributed Ledger...<span class="sr-only">(current)</span></a>
-                </li>
-                @*<li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>*@
+                    <a class="nav-link border border-dark" style="border-width:medium;font-size:18px; font-weight:600; color:black;" href='@Url.Action("Index","Home")'>Modern Web...<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link border border-dark" style="border-width:medium;font-size:18px; font-weight:600; color:black;" href='@Url.Action("Solution","Home")'>Distributed Ledger Platforms...</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -215,11 +209,11 @@
         </div>
     </div>
     <div class="d-flex p-0 mb-5 justify-content-center">
-       <span class="d-flex w-25">1</span>
-      @* <span class="d-flex justify-content-center p-0 m-0 w-50">*@
-             <h5  class="d-flex m-0;p-0" style="text-align:center; text-align-last:center;">de-Centralized / P2P Network </h5>
-      @* </span>*@
-       <span class="d-flex w-25">3</span>
+        <span class="d-flex w-25">1</span>
+        @* <span class="d-flex justify-content-center p-0 m-0 w-50">*@
+        <h5 class="d-flex m-0;p-0" style="text-align:center; text-align-last:center;">de-Centralized / P2P Network </h5>
+        @* </span>*@
+        <span class="d-flex w-25">3</span>
     </div>
     <h4 style="font-size:22px;text-align:center;font-weight:600;">DeCentralized Networks and Digital Ledgers</h4>
     <h4 style="font-size:22px;text-align:center;font-weight:600;">A Perfect Fit</h4>
@@ -257,149 +251,165 @@
 </section>
 @*page 2*@
 
-    <section>
-        <div class="d-flex flex-row">
-            <p class="w-5"></p>
-            <p class="w-90 d-flex justify-content-center display-3  mt-5 py-5 px-3"
-               style="color:white;text-align-last:center;text-align:center; background-color:#955937;">The History</p>
-            <p class="w-5"></p>
-        </div>
-    </section>
-<section>    
-<div>
+<section>
+    <div class="d-flex flex-row">
+        <p class="w-5"></p>
+        <p class="w-90 d-flex justify-content-center display-3  mt-5 py-5 px-3"
+           style="color:white;text-align-last:center;text-align:center; background-color:#955937;">The History</p>
+        <p class="w-5"></p>
+    </div>
+</section>
+<section>
+    <div>
         @*Heading*@
-@*3-column-block*@
-<div class="av_content d-flex">
-    @*left margin*@
-    <div class="border10 w-10"></div>
-    @*middle text body*@
-    <div class="text70 w-75 flex-column">
-        <p class="col_ShortLine">
-            Distributed ledger technology [DLT] was introduced when the mysterious Satoshi Nakamoto published Bitcoin: A Peer&#8209;to&#8209;Peer Electronic Cash System in October 2008 only weeks after the collapse of Lehmann Brothers.
-        </p>
-        <p class="col_ShortLine">
-            Two months later the Bitcoin Network went live on the Internet when a block of 50 bitcoins was “mined” by Nakamoto and sent to the computer scientist Hal Finney.
-        </p>
-        <p class="col_ShortLine">
-            Today, the market cap of  Bitcoin and the other top 100 crypto&#8209;currencies that operate under the engineering principles of Nakamoto’s blockchain / peer&#8209;to&#8209;peer electronic cash system.
-        </p>
-        <p class="col_ShortLine">
-            The success of the crypto exchanges validated distributed ledger technology and created great excitement and interest re: the potential of DLT and de&#8209;centralized networks.
-        </p>
-        <p class="col_ShortLine">
-            In 2015 a huge advance in the capabilities of de&#8209;centralized / blockchain&#8209;powered platforms surfaced.
-        </p>
+        @*3-column-block*@
+        <div class="av_content d-flex">
+            @*left margin*@
+            <div class="border10 w-10"></div>
+            @*middle text body*@
+            <div class="text70 w-75 flex-column">
+                <p class="col_ShortLine">
+                    Distributed ledger technology [DLT] was introduced when the mysterious Satoshi Nakamoto published Bitcoin: A Peer&#8209;to&#8209;Peer Electronic Cash System in October 2008 only weeks after the collapse of Lehmann Brothers.
+                </p>
+                <p class="col_ShortLine">
+                    Two months later the Bitcoin Network went live on the Internet when a block of 50 bitcoins was “mined” by Nakamoto and sent to the computer scientist Hal Finney.
+                </p>
+                <p class="col_ShortLine">
+                    Today, the market cap of  Bitcoin and the other top 100 crypto&#8209;currencies that operate under the engineering principles of Nakamoto’s blockchain / peer&#8209;to&#8209;peer electronic cash system.
+                </p>
+                <p class="col_ShortLine">
+                    The success of the crypto exchanges validated distributed ledger technology and created great excitement and interest re: the potential of DLT and de&#8209;centralized networks.
+                </p>
+                <p class="col_ShortLine">
+                    In 2015 a huge advance in the capabilities of de&#8209;centralized / blockchain&#8209;powered platforms surfaced.
+                </p>
 
-        <p class="col_ShortLine">
-            Ethereum &#8209;&#8209; a blockchain ledger with an integrated programming language was released.
-        </p>
+                <p class="col_ShortLine">
+                    Ethereum &#8209;&#8209; a blockchain ledger with an integrated programming language was released.
+                </p>
 
-        <p class="col_ShortLine">
-            “Smart contracts” extended Ethereum’s capabilities beyond the simple exchange of financial items and moved the Web 3.0 vision toward:
-        </p>
-    </div>
-</div>
-<div class="d-flex w-15"></div>
-</div>
-<div>
-    @*Heading*@
-    @*3-column-block*@
-    <div class="av_content d-flex">
-        @*left margin*@
-        <div class="border10 w-20"></div>
-        @*middle text body*@
-        <div class="d-flex w-60 flex-column m-3 justify-content-center" style="font-size: 16px; font-weight:500">
-            <p class="d-flex justify-content-center">
-                a more secure, trustworthy and globally accessible internet for agreements, finance, auditing, tracking and simple websites and web applications that use decentralized technology to overcome some of the practical, political and technological inefficiencies of previous approaches
-            </p>
+                <p class="col_ShortLine">
+                    “Smart contracts” extended Ethereum’s capabilities beyond the simple exchange of financial items and moved the Web 3.0 vision toward:
+                </p>
+            </div>
         </div>
-        <div class="test20 w-15"></div>
+        <div class="d-flex w-15"></div>
     </div>
-    <div class="d-flex justify-content-end">
-        <p class="d-flex justify-content-end" style="font-size: 14px; font-weight: 500; margin:0;">
-            Gavin Wood
-        </p>
-        <p class="d-flex w-30"></p>
+    <div>
+        @*Heading*@
+        @*3-column-block*@
+        <div class="av_content d-flex">
+            @*left margin*@
+            <div class="border10 w-20"></div>
+            @*middle text body*@
+            <div class="d-flex w-60 flex-column m-3 justify-content-center" style="font-size: 16px; font-weight:500">
+                <p class="d-flex justify-content-center">
+                    a more secure, trustworthy and globally accessible internet for agreements, finance, auditing, tracking and simple websites and web applications that use decentralized technology to overcome some of the practical, political and technological inefficiencies of previous approaches
+                </p>
+            </div>
+            <div class="test20 w-15"></div>
+        </div>
+        <div class="d-flex justify-content-end">
+            <p class="d-flex justify-content-end" style="font-size: 14px; font-weight: 500; margin:0;">
+                Gavin Wood
+            </p>
+            <p class="d-flex w-30"></p>
+        </div>
+        <div class="d-flex justify-content-end">
+            <span class="d-flex justify-content-end" style="margin: 0;font-size: 14px; font-weight: 500">
+                D&#8209;aps: What Web 3.0 Looks Like
+            </span>
+            <span class="d-flex w-30"></span>
+        </div>
     </div>
-    <div class="d-flex justify-content-end">
-        <span class="d-flex justify-content-end" style="margin: 0;font-size: 14px; font-weight: 500">
-            D&#8209;aps: What Web 3.0 Looks Like
-        </span>
-        <span class="d-flex w-30"></span>
-    </div>
-</div>
 </section>
 <section style="padding-top: 10px">
     <div class="d-flex flex-column" style="text-align:center;">
-        @* <p class="d-flex p-2 m-4 display4" style="color: #00bcf2; font-weight: 400; font-size: 38px"></p> *@
-        <p class="d-flex display-3 justify-content-center" style="text-align:center">
-            Platform Components
-        </p>
-        <section class="d-flex flex-column p-5" style="background-color:#313155;">
-            <div class="d-flex justify-content-center">
-            @* <img class="cpoint" src="/Red/img/mobileWordCloud.PNG" alt="Tools" /> *@
-                 <img class="d-flex" src="/Red/img/mobileWordCloud.PNG" alt="Tools" />
-            </div>"
-            <div class="d-flex justify-content-center">
-            <img class="d-flex" src="/Red/img/self-responsiveMobileEth.PNG" alt="Tools" />
-            </div>
-            <div class="d-flex justify-content-center">
-                <img class="d-flex justify-content-center" style="height: auto; width:295px;" src="/Red/img/mobileAzure.PNG" alt="Tools" />
-            </div>
-        </section>
         <p class="d-flex display-4 justify-content-center" style="text-align:center">
             The AvantTek Solution
         </p>
         @* <p class="icntitleb display-4 p-2 m-4" style="color: #00bcf2; font-weight: 400; font-size: 38px">
-            Platform Components
-        </p>
-        <p class="icntitle p-2 m-4" style="color: #00bcf2; font-weight: 400; font-size: 38px">
-            The AvantTek Solution
-        </p> *@
+                Platform Components
+            </p>
+            <p class="icntitle p-2 m-4" style="color: #00bcf2; font-weight: 400; font-size: 38px">
+                The AvantTek Solution
+            </p> *@
     </div>
 
 </section>
-<section id="features" style="padding-top: 20px">
-    <div class="container">
-        @* <span class="d-flex flex-col justify-content-center white-font pt-5"id="header-1">Platforms for Transformation</span> *@
-        <span class="d-flex icntitle flex-row justify-content-center icntitle m-5 p-5" style="font-size: 38px">The D-App Stack</span>
-    </div>
+@*<section id="features" style="background-color: #313155; padding-top: 20px">*@
+<section class="p-5" id="features" style="background-color: #313155;">
+
+
     <div>
         <picture class="d-flex flex-row justify-content-center">
             <source media="(min-width: 700px)" srcset="~/Red/img/WordCloud.png">
             <source media="(min-width: 200px)" srcset="~/Red/img/mobileWordCloud.PNG">
             <img src="~/Red/img/mobileWordCloud.PNG" alt="Tools" />
         </picture>
-        <div class="container">
-            <h3 class="d-flex flex-row justify-content-center">
-                &lt &lt Dev-Tools >>
-            </h3>
-        </div>
+        @*<div class="container">
+                <h3 class="d-flex flex-row justify-content-center">
+                    &lt &lt Dev-Tools >>
+                </h3>
+            </div>*@
         <picture class="d-flex flex-row justify-content-center">
             <source media="(min-width: 700px)" srcset="~/Red/img/ether.PNG">
-            <source media="(min-width: 200px)" srcset="~/Red/img/mobileEther.PNG">
-            <img src="~/Red/img/mobileEther.PNG" alt="Ethereum" />
+            @*<source media="(min-width: 200px)" srcset="~/Red/img/mobileEther.PNG">
+                <img src="~/Red/img/mobileEther.PNG" alt="Ethereum" />*@
+            <source media="(min-width: 200px)" srcset="~/Red/img/self-responsiveMobileEth.PNG">
+            <img src="self-responsiveMobileEth.PNG" alt="Ethereum" />
         </picture>
 
-        <div class="container">
-            <h3 class="d-flex flex row justify-content-center">
-                &lt &lt Blockchain Ledger >>
-            </h3>
-        </div>
+        @*<div class="container">
+                <h3 class="d-flex flex row justify-content-center">
+                    &lt &lt Blockchain Ledger >>
+                </h3>
+            </div>*@
         <picture class="d-flex flex-row justify-content-center">
             <source media="(min-width: 700px)" srcset="~/Red/img/Azure.png">
             <source media="(min-width: 200px)" srcset="~/Red/img/mobileAzure.PNG">
             <img src="~/Red/img/mobileAzure.PNG" alt="Cloudy">>
         </picture>
-        <div class="container">
-            <h3 class="d-flex flex row justify-content-center">
-                &lt &lt Cloud Platform >>
-            </h3>
+        @*<div class="container">
+                <h3 class="d-flex flex row justify-content-center">
+                    &lt &lt Cloud Platform >>
+                </h3>
+            </div>*@
+    </div>
+</section>
+<section id="newsletter" ng-app="app-email">
+    <div ng-controller="emailController as vm" class="d-flex justify-content-center">
+        @*<div ID="emailtest" style="padding-top: 75px" class="ng-app">*@
+        <div ID="emailtest" class="d-flex flex-column ng-app p-0">
+            <span class="d-flex display-4 px-5 pt-0">Building The Solution</span>
+            <div>
+                <ul class="d-flex flex-column mx-5 mt-3 justify-content-start" style="font-size:22px; text-align:left;">
+                    <li><span class="d-flex ml-3" style="position: relative; left:5px;">Dev Tools</span></li>
+
+                    <li><span class="d-flex ml-3" style="position: relative; left:5px">Distributed Ledger</span></li>
+                    <li><span class="d-flex ml-3" style="position: relative; left:5px">Cloud Hosting</span></li>
+                </ul>
+            </div>
+            <form novalidate name="myForm" class="form-inline justify-content-center" ng-submit="vm.SendGridAlphaInterested(vm.email.text)">
+                <div class="d-flex flex-row justify-content-center">
+                    <input type="email" name="input" class="input-sm" ng-model="vm.email.text" required />
+                    <button ng-click='validateEmail()' type="submit" class="btn btn-secondary">Send Me Updates</button>
+                </div>
+            </form>
+            <!-- <div class="d-flex flex-column justify-content-center"> -->
+            <p id="emErr" ng-show="myForm.input.$invalid && myForm.input.$dirty"
+               class="d-flex flex-column justify-content-center"
+               style="font-size: 20px">
+                A valid email is required
+            </p>
+            <!-- </div> -->
         </div>
+
     </div>
 </section>
 
-<footer class="d-flex justify-content-center m-3" style="padding-top: 25px; padding-bottom: 25px">
+<footer style="background-color:#4D738A" class="d-flex justify-content-center p-5">
+    @*<footer class="d-flex justify-content-center m-3" style="padding-top: 25px; padding-bottom: 25px">*@
     <p>
         AvantTek Solutions Inc.  New York, NY
     </p>
