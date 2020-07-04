@@ -18,8 +18,9 @@ namespace Workspace.Controllers
             //model.HtmlSection = System.Net.WebUtility.HtmlDecode(s);
             return View(model);
         }
-    
-        public IActionResult badsolution()
+       
+
+            public IActionResult badsolution()
         {
             // vmHomeIndex model = new vmHomeIndex();
             vmHomeIndex model = new vmHomeIndex();
@@ -111,7 +112,11 @@ namespace Workspace.Controllers
         {
             return View();
         }
-    public IActionResult solutionAlpha()
+        public IActionResult dlt01()
+        {
+            return View();
+        }
+        public IActionResult solutionAlpha()
     {
         return View();
     }
