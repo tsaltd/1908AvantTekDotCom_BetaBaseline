@@ -10,7 +10,7 @@
 <section id="intro" class="intro-well wow d-flex flex-column animated bounceIn w-100" style="padding-top: 50px; padding-bottom: 10px;">
     <div class="d-flex flex-column justify-content-center">
         <h1>Hello AvantTek !!</h1>
-        <h2 style="margin-top: 20px;margin-bottom: 7px;">Testing Adventures in Digital Transformation</h2>
+        <h2 style="margin-top: 20px;margin-bottom: 7px;">Adventures in Digital Transformation</h2>
         <h2 style="margin-bottom: 25px; margin-top: 0px;">Platforms, Frameworks  &amp;  Tools --  Overviews  &  Drill-Downs</h2>
     </div>
 </section>
@@ -58,6 +58,25 @@
     <div class="d-flex flex-column justify-content-center">
         <h3>Inviting You To The Launch of AvantTek.com</h3>
     </div>
+    <div ng-controller="emailController as vm" class="d-flex justify-content-center">
+        <div ID="emailtest" style="padding-top: 75px" class="ng-app">
+                <form novalidate name="myForm" class="form-inline" ng-submit="vm.SendGridAlphaInterested(vm.email.text)">
+                    <div class="d-flex flex-row justify-content-center">
+                        <input type="email" name="input" class="input-sm" ng-model="vm.email.text" required/>
+                        <button ng-click='validateEmail()' type="submit" class="btn btn-secondary">Send Me Updates</button>
+                    </div>
+                </form>
+                <!-- <div class="d-flex flex-column justify-content-center"> -->
+                            <p id="emErr" ng-show="myForm.input.$invalid && myForm.input.$dirty" 
+                                 class="d-flex flex-column justify-content-center"
+                                 style="font-size: 20px">
+                                 A valid email is required</p>
+                <!-- </div> -->
+            </div>
+                
+         </div>
+</section>
+<section>
     <div ng-controller="emailController as vm" class="d-flex justify-content-center">
         <div ID="emailtest" style="padding-top: 75px" class="ng-app">
                 <form novalidate name="myForm" class="form-inline" ng-submit="vm.SendGridAlphaInterested(vm.email.text)">

@@ -20,7 +20,7 @@ namespace Workspace.Controllers
         }
        
 
-            public IActionResult preEmailSolution()
+            public IActionResult fixme()
         {
             // vmHomeIndex model = new vmHomeIndex();
             vmHomeIndex model = new vmHomeIndex();
