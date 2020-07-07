@@ -51,7 +51,7 @@ namespace Workspace.Controllers
 
             return View(model);
         }
-        public IActionResult solution()
+        public IActionResult Solution()
         {
             vmHomeIndex model = new vmHomeIndex();
 
@@ -62,7 +62,8 @@ namespace Workspace.Controllers
             vmHomeIndex model = new vmHomeIndex();
             return View(model);
         }
-    public IActionResult solutionv1()
+    //public IActionResult solutionv1()
+    public IActionResult finalsolution()
     
         {
             vmHomeIndex model = new vmHomeIndex();
@@ -120,5 +121,13 @@ namespace Workspace.Controllers
     {
         return View();
     }
+        public IActionResult DLTComponents()
+    {
+        return View();
+    }
+        public IActionResult intro()
+        {
+            return View();
+        }
     }
 }
