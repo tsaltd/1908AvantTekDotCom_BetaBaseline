@@ -18,9 +18,19 @@ namespace Workspace.Controllers
             //model.HtmlSection = System.Net.WebUtility.HtmlDecode(s);
             return View(model);
         }
-       
+        public IActionResult Default()
+        {
+            // vmHomeIndex model = new vmHomeIndex();
+            vmHomeIndex model = new vmHomeIndex();
 
-            public IActionResult fixme()
+
+            //model.HtmlSection = System.Web.HttpUtility.HtmlDecode(s);
+            //model.HtmlSection = System.Net.WebUtility.HtmlDecode(s);
+            return View(model);
+        }
+
+
+        public IActionResult fixme()
         {
             // vmHomeIndex model = new vmHomeIndex();
             vmHomeIndex model = new vmHomeIndex();
@@ -31,6 +41,15 @@ namespace Workspace.Controllers
             return View(model);
         }
         public IActionResult disint()
+        {
+            // vmHomeIndex model = new vmHomeIndex();
+            vmHomeIndex model = new vmHomeIndex();
+
+            //model.HtmlSection = System.Web.HttpUtility.HtmlDecode(s);
+            // model.HtmlSection = System.Net.WebUtility.HtmlDecode(s);
+            return View(model);
+        }
+        public IActionResult index1()
         {
             // vmHomeIndex model = new vmHomeIndex();
             vmHomeIndex model = new vmHomeIndex();

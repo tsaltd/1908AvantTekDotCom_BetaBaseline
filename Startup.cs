@@ -60,8 +60,9 @@ namespace Workspace
                 routes.MapRoute(
                     name: "default",
                     //template: "{controller=Workspace}/{action=WorkspaceHello}/{id?}");
-                    template: "{controller=Home}/{action=Index}/{id?}");
-            });
+                    //template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Home}/{action=Default}/{id?}");
+        });
         }
 
         private void AddConsole(Startup startup, ILoggingBuilder loggingBuilder, object builder)
