@@ -1,17 +1,21 @@
-﻿using System;
-using System.IO;
+﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Builder;
-
-
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
+using Workspace;
 namespace Workspace
 {
     public class Startup
     {
-        public Startup(IHostingEnvironment env)
+        [Obsolete]
+        public Startup(Microsoft.Extensions.Hosting.IHostingEnvironment env)
         {
             // Set up configuration sources.
             var builder = new ConfigurationBuilder()
@@ -33,12 +37,12 @@ namespace Workspace
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostEnvironment env, ILoggerFactory loggerFactory)
         {
-          
-/* #pragma warning disable CS0618 // Type or member is obsolete
-            loggerFactory.AddDebug();
-#pragma warning restore CS0618 // Type or member is obsolete */
+
+            /* #pragma warning disable CS0618 // Type or member is obsolete
+                        loggerFactory.AddDebug();
+            #pragma warning restore CS0618 // Type or member is obsolete */
 
             if (env.IsDevelopment())
             {
@@ -55,13 +59,15 @@ namespace Workspace
             //app.UseFileServer(enableDirectoryBrowsing: true);
             //app.UseDirectoryBrowser();
 
-            app.UseMvc(routes =>
+
+            app.UseRouting();
+                
+            app.UseEndpoints(endpoints =>
             {
-                routes.MapRoute(
+                endpoints.MapControllerRoute(
                     name: "default",
-                    //template: "{controller=Workspace}/{action=WorkspaceHello}/{id?}");
-                    //template: "{controller=Home}/{action=Index}/{id?}");
-                    template: "{controller=Home}/{action=Default}/{id?}");
+                   pattern: "{controller=Home}/{action=Default}/{id?}");
+                 //  pattern: "{controller=Home}/{action=Defaultx}/{id?}");
         });
         }
 
