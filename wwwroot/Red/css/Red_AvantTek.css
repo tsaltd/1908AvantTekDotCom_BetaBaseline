@@ -8,6 +8,11 @@
         padding-bottom: 12px;
     }
 }
+/*@media (min-width: 768px) {
+	.navbar-nav {
+		margin-left: -30px;
+	}
+}*/
 .callOuts {
 	border: 1px solid #d7d8da;
 }

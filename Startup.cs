@@ -66,7 +66,7 @@ namespace Workspace
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                   pattern: "{controller=Home}/{action=Default}/{id?}");
+                   pattern: "{controller=EcoSphere}/{action=ModernWeb}/{id?}");
                  //  pattern: "{controller=Home}/{action=Defaultx}/{id?}");
         });
         }
