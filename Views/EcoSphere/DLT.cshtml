@@ -27,36 +27,37 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav d-flex" >
-                @*<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>*@
-                <a class="nav-item nav-link" href="#" style="font-size:30px;">{ Modern Web }</a>
-                <a class="nav-item nav-link" href="#" style="font-size:30px;">{ Distributed Ledger Technologies }</a>
+            <div class="navbar-nav d-flex">
+                <a class="nav-item nav-link active" href=@Url.Action("ModernWeb", "Ecosphere")>{ Modern Web }<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href=@Url.Action("DLT", "Ecosphere")>{ Distributd Ledger Technology }<span class="sr-only">(current)</span></a>
+                @*<a class="nav-item nav-link" style="font-size:30px;" href=@Url.Action("ModernWeb", "Ecosphere")<span class="sr-only">(current)</span></a>*@
+               @* <a class="nav-item nav-link" href="#" style="font-size:30px;">{ Distributed Ledger Technologies }</a>*@
                 @*<a class="nav-item nav-link disabled" href="#">Disabled</a>*@
             </div>
         </div>
     </nav>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    @*<nav class="navbar navbar-expand-lg navbar-light bg-light">*@
         @*<a class="navbar-brand" href="#" style="font-size:25px;">Transformations:</a>*@
         @*<a class="d-flex display-4 navbar-brand" href="#">Transformations:</a>*@
-        <div class="d-flex">
-            <button class="d-flex justify-content-start navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        @*<div class="d-flex">
+            <button class="d-flex justify-content-start navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">*@
                 @*<span class="navbar-toggler-icon"></span>*@
-            </button>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            @*</button>*@
+        @*</div>*@
+        @*<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" style="font-size:18px; font-weight:600; color:#486E85;" href='@Url.Action("ModernWeb","Ecosphere")'>{ Modern Web }<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" style="font-size:18px; font-weight:600; color:#486E85;" href='@Url.Action("ModernWeb","Ecosphere")'>{ Modern Web }</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" style="font-size:18px; padding-left:30px; font-weight:600; color:#486E85;" href='@Url.Action("DLT","EcoSphere")'>{  Distributed Ledger Technology } </a>
                 </li>
             </ul>
-        </div>
-    </nav>
+        </div>*@
+    @*</nav>*@
 </section>
 <section>
     <div class="d-flex  justify-content-center">
