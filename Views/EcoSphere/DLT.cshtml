@@ -2,14 +2,7 @@
     ViewData["Title"] = "Index";
     Layout = "_LayoutRed";}
 
-@model Workspace.ViewModels.vmHomeIndex;
 <section id="intro" class="intro-well wow d-flex flex-row animated justify-content-center" style="padding-top: 20px;padding-bottom: 20px;">
-@* <section id="intro" class="intro-well wow d-flex flex-row animated bounceIn justify-content-center" style="padding-top: 20px;padding-bottom: 20px;">   *@
-    @*<div class="d-flex">
-            <span class="my-1">
-                <span style="font-size:35px;text-align:center;">&#9642;&#9642;&#9642;</span>
-            </span>
-        </div>*@
     <div class="d-flex flex-column justify-content-center">
         <div id="avantCust" class="d-flex d-row mx-3" style="margin-top: 20px;margin-bottom: 7px;">
             <img src="~/Red/img/sigbeta00.png" alt="AvantTek !" data-pin-nopin="true" />
@@ -21,43 +14,54 @@
     </div>
 </section>
 <section>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex">
-        @*<a class="navbar-brand" href="#">Navbar</a>*@
-        <button class="d-flex justify-content-end navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+</section>
+<section>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-toggle-right bg-light d-flex">
+        <button class="d-flex justify-content-end navbar-toggle-right navbar-toggler" style="text-align:left" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon mr-auto" style="text-align:right;"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav d-flex">
                 <a class="nav-item nav-link active" href=@Url.Action("ModernWeb", "Ecosphere")>{ Modern Web }<span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link active" href=@Url.Action("DLT", "Ecosphere")>{ Distributd Ledger Technology }<span class="sr-only">(current)</span></a>
-                @*<a class="nav-item nav-link" style="font-size:30px;" href=@Url.Action("ModernWeb", "Ecosphere")<span class="sr-only">(current)</span></a>*@
-               @* <a class="nav-item nav-link" href="#" style="font-size:30px;">{ Distributed Ledger Technologies }</a>*@
-                @*<a class="nav-item nav-link disabled" href="#">Disabled</a>*@
             </div>
         </div>
     </nav>
-    @*<nav class="navbar navbar-expand-lg navbar-light bg-light">*@
-        @*<a class="navbar-brand" href="#" style="font-size:25px;">Transformations:</a>*@
-        @*<a class="d-flex display-4 navbar-brand" href="#">Transformations:</a>*@
-        @*<div class="d-flex">
-            <button class="d-flex justify-content-start navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">*@
-                @*<span class="navbar-toggler-icon"></span>*@
-            @*</button>*@
-        @*</div>*@
-        @*<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" style="font-size:18px; font-weight:600; color:#486E85;" href='@Url.Action("ModernWeb","Ecosphere")'>{ Modern Web }</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" style="font-size:18px; padding-left:30px; font-weight:600; color:#486E85;" href='@Url.Action("DLT","EcoSphere")'>{  Distributed Ledger Technology } </a>
-                </li>
-            </ul>
-        </div>*@
-    @*</nav>*@
 </section>
 <section>
     <div class="d-flex  justify-content-center">
@@ -234,7 +238,7 @@
     <div class="d-flex p-0 mb-5 justify-content-center">
         <span class="d-flex w-25"></span>
         @* <span class="d-flex justify-content-center p-0 m-0 w-50">*@
-    <h5 class="d-flex m-0;p-0" style="text-align:center; text-align-last:center;">de&#8209;Centralized / P2P Network </h5>
+        <h5 class="d-flex m-0;p-0" style="text-align:center; text-align-last:center;">de&#8209;Centralized / P2P Network </h5>
         @* </span>*@
         <span class="d-flex w-25"></span>
     </div>
