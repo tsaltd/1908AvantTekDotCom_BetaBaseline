@@ -20,33 +20,21 @@
         <button class="navbar-toggler" style="text-align:right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        @*<button class="navbar-toggler ml-auto hidden-sm-up float-xs-right" data-toggle="collapse" data-target="#navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>*@
-        @*<button type="button" class="navbar-toggler ml-auto hidden-sm-up float-xs-right" data-toggle="collapse" data-target="#navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>*@
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" style="font-size:18px;" href=@Url.Action("ModernWeb", "Ecosphere")>{  Modern Web Tools  }</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="font-size:18px;" href=@Url.Action("ModernWeb", "Ecosphere")>{  Distributed Ledger Technologies  }<span class="sr-only">(current)</span></a>
+                <li class="nav-item active">
+                    <a class="nav-link" style="font-size:18px;" href=@Url.Action("DLT", "Ecosphere")>{  Distributed Ledger Technologies  }<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
     </nav>
 </section>
-@*<section>
-        <nav class="navbar navbar-expand-lg navbar-light navbar-toggle-right bg-light d-flex">
-            <button class="d-flex justify-content-end navbar-toggle-right navbar-toggler" style="text-align:left" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon mr-auto" style="text-align:right;"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav d-flex">
-                    <a class="nav-item nav-link active" href=@Url.Action("ModernWeb", "Ecosphere")>{ Modern Web }<span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link active" href=@Url.Action("DLT", "Ecosphere")>{ Distributd Ledger Technology }<span class="sr-only">(current)</span></a>
-                </div>
-            </div>
-        </nav>
-    </section>*@
+
+
 <section>
     <div class="d-flex  justify-content-center">
         <p class="d-flex justify-content-center display-3 my-5" style="text-align-last: center; text-align:center;letter-spacing:4px;">
