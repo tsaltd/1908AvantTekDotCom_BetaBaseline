@@ -61,5 +61,8 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <None Update="/src/obj/Release/net5.0/apphost" CopyToOutputDirectory="app/build/Workspace" />
+  </ItemGroup>
 </Project>
 
